@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import WelcomePage from "./welcome";
+import WelcomePage from "./home";
 import axios from "axios";
 
 export default function Home() {
