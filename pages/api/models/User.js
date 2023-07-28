@@ -13,10 +13,6 @@ const userSchema = new Schema(
             lowercase: true,
             validate: [isEmail, "Please provide a valid email"],
         },
-        fullName: {
-            type: String,
-            required: [true, "Please enter your name"],
-        },
         role: {
             type: Schema.ObjectId,
             ref: "Role",
@@ -26,9 +22,6 @@ const userSchema = new Schema(
             required: [true, "Please provide a password"],
             minlength: 8,
             select: false, //do not select password for every user query
-        },
-        profileImage: {
-            type: String
         },
         passwordConfirm: {
             type: String,
