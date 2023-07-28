@@ -13,16 +13,16 @@ const Layout: FC<Props> = ({ children, crumbs }) => {
   const router = useRouter();
 
   return (
-    <section className=" flex bg-[var(--neutral-1)] w-full h-full">
+    <section className=" flex bg-black w-screen h-screen">
       <Fragment>
         {/* Header here */}
         <header className=" fixed top-0 z-[55] w-full border-b bg-black">
           <Navbar />
         </header>
         {/* Footer here */}
-        <footer className=" fixed bottom-0 z-[55] h-[200px]  w-full border-b border-[var(--secondary-800)] bg-[green] p-6"></footer>
+        <footer className=" fixed bottom-0 z-[55] h-[200px]  w-full border-b p-6"></footer>
       </Fragment>
-      <section className=" mt-32 px-6">{children}</section>
+      <section className="px-6 mx-auto">{children}</section>
     </section>
   );
 };
