@@ -17,6 +17,7 @@ import {
   HiOutlineClipboardList,
   HiOutlineCog,
   HiOutlineCube,
+  HiMenu,
   HiOutlinePresentationChartLine,
 } from "react-icons/hi";
 import { HiXMark } from "react-icons/hi2";
@@ -41,6 +42,9 @@ const Icons: FC<Props> = ({
 
   if (icon === IconType.CHEVRON_DOWN_CIRCLE) {
     Icon;
+  }
+  if (icon === IconType.MENU) {
+    Icon = HiMenu;
   }
 
   if (icon === IconType.CHEVRON_LEFT) {
