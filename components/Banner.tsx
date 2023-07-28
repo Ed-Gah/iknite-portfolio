@@ -4,7 +4,7 @@ export const Banner = () => {
       <div className="lg:text-[54px] text-center text-[25px] sm:text-[40px] text-white font-[700]">
         <span className=" text-transparent bg-clip-text bg-gradient-to-r from-haiti-300 to-pink-800">
           Hello, We’re Iknite Space,
-        </span>{" "}
+        </span>
         A creative start-up based in Cameroon
       </div>
       <div className="text-center text-[#FFF] md:text-[14px] text-[13px]">
