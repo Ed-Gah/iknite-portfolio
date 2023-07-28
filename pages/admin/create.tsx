@@ -178,18 +178,7 @@ export default function Create() {
               
               </div>
 
-              <div className="">
-                {/* {tickets ? ( */}
-                <table className="w-full text-left text-sm text-gray-500">
-                  <tbody className="container">
-                    <tr>
-                      <td>Name</td>
-                      <td>Price</td>
-                    </tr>
-                 
-                  </tbody>
-                </table>
-              </div>
+           
             </div>
           </div>
         </div>
