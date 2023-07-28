@@ -14,7 +14,7 @@ type Team = {
       }
     }
 }
-export default function Team({glance}) {
+export default function Team({glance}:any) {
   return (
     <div>
         <div className="w-96 h-[594px] px-4 pt-[453px] pb-4 rounded-[32px] border border-neutral-900 flex-col justify-start items-start gap-2 inline-flex">
