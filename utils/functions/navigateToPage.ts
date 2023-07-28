@@ -1,5 +1,4 @@
-import { SideBarItem } from "../constants/default.sidbar-item";
-export const navigateToPage = (e: any, item: SideBarItem, router: any) => {
+export const navigateToPage = (e: any, item: any, router: any) => {
   e.preventDefault();
   if (typeof window !== "undefined") {
     localStorage.setItem("@active", item.href) as any;
