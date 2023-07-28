@@ -1,4 +1,6 @@
 import React from 'react'
+import { Icons } from '..'
+import { IconType } from '@/types/icontypes/icon.type'
 
 
 type Team = {
@@ -14,10 +16,10 @@ type Team = {
       }
     }
 }
-export default function MemberCard({glance}:any) {
+export default function MemberCard({glance}:Team) {
   return (
     <div className="">
-        <div className="relative w-80 h-[400px] overflow-hidden rounded-3xl border border-neutral-900 bg-white flex-col justify-start items-start gap-2 inline-flex">
+        <div className="relative w-64 sm:w-80 h-[19rem] sm:h-[400px] overflow-hidden rounded-3xl border border-neutral-900 bg-white flex-col justify-start items-start gap-2 inline-flex">
             <div className="w-full h-full">
                 <img src={"./desmond.jpg"} alt={""} className="h-full w-auto aspect-video object-cover object-center"/>
             </div>
@@ -31,25 +33,37 @@ export default function MemberCard({glance}:any) {
                         {
                             glance.socialMedia?.twitter &&
                             <a href={glance.socialMedia?.twitter} target="_blank" rel="noreferrer" className="text-neutral-900 hover:text-neutral-800">
-                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path></svg>
+                                <Icons
+                                    icon={IconType.TWITTER}
+                                    className="text-white cursor-pointer"
+                                />
                             </a>
                         }
                         {
                             glance.socialMedia?.linkedin &&
                             <a href={glance.socialMedia?.linkedin} target="_blank" rel="noreferrer" className="text-neutral-900 hover:text-neutral-800">
-                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path></svg>
+                                <Icons
+                                    icon={IconType.LINKEDIN}
+                                    className="text-white cursor-pointer"
+                                />
                             </a>
                         }
                         {
                             glance.socialMedia?.github &&
                             <a href={glance.socialMedia?.github} target="_blank" rel="noreferrer" className="text-neutral-900 hover:text-neutral-800">
-                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path></svg>
+                                <Icons
+                                    icon={IconType.GITHUB}
+                                    className="text-white cursor-pointer"
+                                />
                             </a>
                         }
                         {
                             glance.socialMedia?.behance &&
                             <a href={glance.socialMedia?.behance} target="_blank" rel="noreferrer" className="text-neutral-900 hover:text-neutral-800">
-                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path></svg>
+                                <Icons
+                                    icon={IconType.BEHANCE}
+                                    className="text-white cursor-pointer"
+                                />
                             </a>
                         }
                     </div>

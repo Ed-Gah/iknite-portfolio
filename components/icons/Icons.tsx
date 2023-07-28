@@ -22,8 +22,8 @@ import {
 } from "react-icons/hi";
 import { HiXMark } from "react-icons/hi2";
 import { BiLogoFacebookCircle } from "react-icons/bi";
-import { AiOutlineTwitter } from "react-icons/ai";
-import { RiInstagramFill } from "react-icons/ri";
+import { AiOutlineTwitter, AiOutlineGithub, AiOutlineBehanceSquare } from "react-icons/ai";
+import { RiInstagramFill, RiLinkedinBoxFill } from "react-icons/ri";
 
 interface Props {
   className?: any;
@@ -117,6 +117,15 @@ const Icons: FC<Props> = ({
   }
   if (icon === IconType.TWITTER) {
     Icon = AiOutlineTwitter;
+  }
+  if (icon === IconType.GITHUB) {
+    Icon = AiOutlineGithub;
+  }
+  if (icon === IconType.LINKEDIN) {
+    Icon = RiLinkedinBoxFill;
+  }
+  if (icon === IconType.BEHANCE) {
+    Icon = AiOutlineBehanceSquare;
   }
   if (icon === IconType.INSTAGRAM) {
     Icon = RiInstagramFill;
