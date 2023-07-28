@@ -2,6 +2,7 @@
 import React, { FC, Fragment } from "react";
 
 import { useRouter } from "next/navigation";
+import Navbar from "../Navbar";
 
 interface Props {
   children: any;
@@ -15,8 +16,8 @@ const Layout: FC<Props> = ({ children, crumbs }) => {
     <section className=" flex bg-black w-screen h-screen">
       <Fragment>
         {/* Header here */}
-        <header className=" fixed top-0 z-[55] h-[88px]  w-full p-6">
-          <nav></nav>
+        <header className=" fixed top-0 z-[55] w-full border-b bg-black">
+          <Navbar />
         </header>
         {/* Footer here */}
         <footer className=" fixed bottom-0 z-[55] h-[200px]  w-full border-b p-6"></footer>
