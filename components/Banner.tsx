@@ -1,6 +1,6 @@
 export const Banner = () => {
   return (
-    <div className="lg:w-[1000px] my-[126px] flex flex-col gap-4">
+    <div className="lg:w-[1000px] mt-[100px] py-[126px] flex flex-col gap-4">
       <div className="lg:text-[54px] text-center text-[25px] sm:text-[40px] text-white font-[700]">
         <span className=" text-transparent bg-clip-text bg-gradient-to-r from-haiti-300 to-pink-800">
           Hello, We’re Iknite Space,
