@@ -1,12 +1,7 @@
 "use client";
-import React, { FC, useEffect, useState } from "react";
-import Icons from "../icons/Icons";
-import { IconType } from "@/types/icontypes/icon.type";
-import Image from "next/image";
-import { Initials, defaultSidebarItems, navigateToPage } from "@/utils";
-import { SideBarItem } from "@/utils/constants/default.sidbar-item";
+import React, { FC } from "react";
+
 import { useRouter } from "next/navigation";
-import Link from "next/link";
 
 interface Props {
   children: any;
@@ -15,21 +10,6 @@ interface Props {
 
 const Layout: FC<Props> = ({ children, crumbs }) => {
   const router = useRouter();
-  /* State management */
-  const [notifications, setNotifications] = useState<number>(0);
-  const [hover, setHover] = useState<boolean>(false);
-  const [hoverIndex, setHoverIndex] = useState(null) as any;
-  const [activeLink, setActiveLink] = useState<string>("");
-  const [activeTitle, setActiveTitle] = useState<string>("");
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const queryString: any = localStorage.getItem("@active");
-      setActiveLink(queryString);
-      const query: any = localStorage.getItem("@title");
-      setActiveTitle(query);
-    }
-  }, []);
 
   return (
     <div className=" flex">

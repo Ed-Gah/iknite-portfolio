@@ -1,8 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
+import projectReducer from "../../redux/slices/project.slice";
 
 export const store = configureStore({
   /** Render your reducers here */
-  reducer: {},
+  reducer: { project: projectReducer },
   devTools: process.env.NODE_ENV !== "production",
 });
 
