@@ -36,7 +36,7 @@ export default function Navbar() {
       </div>
 
       <div className="hidden md:contents md:justify-end ">
-        <button className="bg-white hover:bg-blue-700 text-[#131039] text-[16px] lg:rounded-full font-medium py-2 px-4 rounded-full">
+        <button className="bg-white text-[#131039] text-[16px] lg:rounded-full font-medium py-2 px-4 rounded-full">
           Let's Talk
         </button>
       </div>
