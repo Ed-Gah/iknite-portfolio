@@ -1,10 +1,11 @@
 import { Layout } from "@/components";
+import { EventsBanner } from "@/components/EventsBanner";
 import React from "react";
 
 const WelcomePage = () => {
   return (
     <Layout>
-      <h2>Welcome screen</h2>
+      <EventsBanner />
     </Layout>
   );
 };
