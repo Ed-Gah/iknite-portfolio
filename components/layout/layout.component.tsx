@@ -16,7 +16,7 @@ const Layout: FC<Props> = ({ children, crumbs }) => {
       <Fragment>
         {/* Header here */}
         <header className=" fixed top-0 z-[55] h-[88px]  w-full border-b border-[red] bg-[red] p-6">
-          <nav></nav>
+          <nav>cc</nav>
         </header>
         {/* Footer here */}
         <footer className=" fixed bottom-0 z-[55] h-[200px]  w-full border-b border-[var(--secondary-800)] bg-[green] p-6"></footer>
