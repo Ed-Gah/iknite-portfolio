@@ -1,38 +1,162 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ikniteSpace-portfolio
 
-## Getting Started
+![iknitelogo](/assets/images/iknite-logo.png)
 
-First, run the development server:
+Frontend Web Interface for ikniteSpace-portfolio
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+### FrontEnd Production
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+https://iknite-portfolio.vercel.app/
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### BackEnd Production
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+The aim of this project is to 
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- Show-case iknite space projects
+- Exhibit talents that have been cultivated at iknite.
+- 
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+It contains information about all the projects carried out at iknite space.
 
-## Learn More
+## Built WIth
 
-To learn more about Next.js, take a look at the following resources:
+- HTML
+- TypeScript
+- Tailwind CSS
+- node js
+- Next js
+- Redux
+- npm
+- vitest
+- husky
+- react
+- react-dom
+- hero-icons
+- headless-ui
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Collaboration tools
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- milanote
+- jira
+- figma
+- RetroBoard
+- Slack
+- Google Meet
+- Zoom
 
-## Deploy on Vercel
+## Meeting Dates/TIME
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- DAYS : Standups :
+- Mondays : 10:00am - 10:15am :
+- Tuesdays : 10:00am - 10:15am :
+- Wednesdays: 10:00am - 10:15am :
+- Thursdays : 10:00am - 10:15am :
+- Fridays : 10:00am - 10:015am :
+- Saturdays : 10:00am - 10:015am :
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Live Demo
+
+-
+
+## Project Description, Features, Mood boards, Planning, TASKS
+
+- Jira : <https://iknite.atlassian.net/jira/software/c/projects/CLIQ/boards/1/backlog>
+- Milanote : <https://app.milanote.com/1Ovwzb1RuwpUfa/engineering?p=J26DiZqIlQI>
+
+## DESIGNS
+
+- Figma (<[Follow-this-link-to-see-the-designs]>)
+
+## Getting started
+
+To get a local copy and to set it up and running follow these simple example steps.
+
+### Prerequisites
+
+- Browser
+- Internet
+- Vs-code
+- make
+- node
+
+- Download the code from repository (<https://github.com/Ed-Gah/iknite-portfolio>).
+- Run `npm install` and `npm run dev` and then open `http://localhost:3000/` on the browser to view it.
+- ### OR
+
+  - Run the command: `make run` (That is after installing make)
+  - Note that you can still run the code by explicitely typing out the commands you will find in the make file if you have difficulties setting it up
+  - You can find directions on how to setup make files here(<>)
+
+### Testing
+
+Run the code below to setup vitest testing environment
+
+- `npm install -D vitest`
+- Run `npm run test` to test the application.
+
+## LINTER
+
+Run `npm run lintCheck` to run eslint using 'prettier' code formatter
+
+## API
+
+-
+
+### API EndPoints
+
+- local developement <http://localhost:9090/events>
+- remote developement
+
+## HOSTING
+
+- vercel
+- AWS
+- render
+
+## Authors Add your details below
+
+---
+
+👤 **Akoneh Silas Magho**
+
+- Github: [Casaemiro](https://github.com/Casaemiro/)
+
+---
+
+👤 **Kimboh Lovert**
+
+- Github: [Kimboh Lovert](https://github.com/Casaemiro/)
+
+---
+
+👤 **Gilbert Tima**
+
+- Github: [I-Frostbyte](https://github.com/Casaemiro/)
+
+---
+
+👤 **Samba Carlson**
+
+- Github: [Samba Carlson](https://github.com/Casaemiro/)
+
+---
+
+## 👤 Tambua Evaristus
+
+## 👤 Namkat Cedrick
+
+
+## BEST PRACTICES / REPO guidlines
+
+- Never push directly to development
+- create a separate branch for each task you are working on.
+- create a PR when task is done and merge only when reviewed and approved.
+- delete branch when PR is merged.
+
+## Extras
+
+- _tests_ / <!-- tests goes in here -->
+- utils / <!-- ultility functions are placed here-->
+- types / contains types definitions for various services
+
+[follow-this-link-to-see-the-designs]: https://www.figma.com/file/wGmqoWZ387Hs9fnuhRimiu/Iknite-Space-Portfolio?type=design&node-id=1%3A3&mode=design&t=tg8B3avu0FPjztDX-1
