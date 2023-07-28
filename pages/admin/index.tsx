@@ -1,12 +1,15 @@
 import React from "react";
-import Dashboard from "../../components/organizer/Dashboard";
-import EventList from "../../components/organizer/event/EventList";
-import { GetServerSideProps } from "next";
+import Dashboard from "../../components/admin/Dashboard";
+import Layout from "@/components/admin/Layout";
 
 
-export default function index({ events }: Props) {
+
+export default function index() {
   return (
     <div>
+      <Layout>
+
+      </Layout>
       <div className="  container">
         <Dashboard />
 
