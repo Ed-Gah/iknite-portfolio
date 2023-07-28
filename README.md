@@ -139,6 +139,12 @@ You can have access to the api through `pages/api`
 
 ---
 
+👤 **Mbianou Bradon**
+
+- Github: [Mbianou Bradon](https://github.com/mbianou-bradon/)
+
+---
+
 👤 **Samba Carlson**
 
 - Github: [Samba Carlson](https://github.com/Casaemiro/)
