@@ -21,6 +21,9 @@ import {
   HiOutlinePresentationChartLine,
 } from "react-icons/hi";
 import { HiXMark } from "react-icons/hi2";
+import { BiLogoFacebookCircle } from "react-icons/bi";
+import { AiOutlineTwitter } from "react-icons/ai";
+import { RiInstagramFill } from "react-icons/ri";
 
 interface Props {
   className?: any;
@@ -108,6 +111,15 @@ const Icons: FC<Props> = ({
   }
   if (icon === IconType.LIBARY) {
     Icon = HiOutlinePresentationChartLine;
+  }
+  if (icon === IconType.FACEBOOK) {
+    Icon = BiLogoFacebookCircle;
+  }
+  if (icon === IconType.TWITTER) {
+    Icon = AiOutlineTwitter;
+  }
+  if (icon === IconType.INSTAGRAM) {
+    Icon = RiInstagramFill;
   }
   return (
     <Icon

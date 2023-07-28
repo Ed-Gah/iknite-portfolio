@@ -1,10 +1,12 @@
 import Link from "next/link";
 import React, { useState } from "react";
-import image from "../assets/images/iknite-logo.png";
+import logo from "../assets/images/logo.png";
 import Image from "next/image";
 import { Icons } from ".";
 import { IconType } from "@/types/icontypes/icon.type";
 import { MobileMenu } from "./MobileMenu";
+import { navItems } from "@/utils";
+import { NavItem } from "@/utils/constant/navItem";
 
 export default function Navbar() {
   const [showNav, setShowNav] = useState(false);
@@ -12,25 +14,21 @@ export default function Navbar() {
     <div className="flex px-4 h-[88px] py-6 justify-between items-center max-w-[1200px] mx-auto ">
       <div className="flex">
         <div className="pr-20 flex-shrink-0 ">
-          <Image src={image} height={50} width={50} alt="..." />
+          <Image src={logo} height={50} width={50} alt="..." />
         </div>
         <div className="hidden w-full flex-grow md:flex lg:w-auto items-center lg:space-x-4">
           <ul className="flex items-center text-white justify-center font-medium flex-row gap-6 text-[16px]">
-            <li className="block lg:inline-block">
-              <Link href="/">Home</Link>
-            </li>
-            <li className="block lg:inline-block hover:bg-red-400">
-              <Link href="https://iknite.space">About</Link>
-            </li>
-            <li className="block lg:inline-block hover:bg-red-400">
-              <Link href="/projects">Project</Link>
-            </li>
-            <li className="block lg:inline-block hover:bg-red-400">
-              <Link href="/team">Team</Link>
-            </li>
-            <li className="block lg:inline-block hover:bg-red-400">
-              <Link href="/events">Events</Link>
-            </li>
+            {navItems.map((navItem: NavItem, i: number) => {
+              return (
+                <li key={i} className="block lg:inline-block">
+                  {navItem.name === "About" ? (
+                    <Link href={"https://iknite.space"}>{navItem.name}</Link>
+                  ) : (
+                    <Link href={navItem.href}>{navItem.name}</Link>
+                  )}
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>
