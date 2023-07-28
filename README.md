@@ -2,11 +2,15 @@
 
 ![iknitelogo](/assets/images/iknite-logo.png)
 
-Frontend Web Interface for ikniteSpace-portfolio
+***Frontend Web Interface for ikniteSpace-portfolio***
 
-### FrontEnd Production
 
-https://iknite-portfolio.vercel.app/
+
+[FrontEnd Production Environment](https://iknite-portfolio.vercel.app/)
+
+[FrontEnd testing Environment](https://iknite-portfolio.vercel.app/)
+
+[FrontEnd development Environment](https://iknite-portfolio.vercel.app/)
 
 ### BackEnd Production
 
@@ -20,29 +24,29 @@ It contains information about all the projects carried out at iknite space.
 
 ## Built WIth
 
-- HTML
-- TypeScript
-- Tailwind CSS
-- node js
-- Next js
-- Redux
-- npm
-- vitest
-- husky
-- react
-- react-dom
-- hero-icons
-- headless-ui
+    - HTML
+    - TypeScript
+    - Tailwind CSS
+    - node js
+    - Next js
+    - Redux
+    - npm
+    - vitest
+    - husky
+    - react
+    - react-dom
+    - hero-icons
+    - headless-ui
 
 ## Collaboration tools
 
-- milanote
-- jira
-- figma
-- RetroBoard
-- Slack
-- Google Meet
-- Zoom
+    - milanote
+    - jira
+    - figma
+    - RetroBoard
+    - Slack
+    - Google Meet
+    - Zoom
 
 ## Meeting Dates/TIME
 
@@ -56,7 +60,7 @@ It contains information about all the projects carried out at iknite space.
 
 ## Live Demo
 
--
+[Link](https://iknite-portfolio.vercel.app/)
 
 ## Project Description, Features, Mood boards, Planning, TASKS
 
@@ -76,16 +80,15 @@ To get a local copy and to set it up and running follow these simple example ste
 - Browser
 - Internet
 - Vs-code
-- make
 - node
 
 - Download the code from repository (<https://github.com/Ed-Gah/iknite-portfolio>).
 - Run `npm install` and `npm run dev` and then open `http://localhost:3000/` on the browser to view it.
 - ### OR
 
-  - Run the command: `make run` (That is after installing make)
-  - Note that you can still run the code by explicitely typing out the commands you will find in the make file if you have difficulties setting it up
-  - You can find directions on how to setup make files here(<>)
+- Run the command: `make run` (That is after installing make)
+- Note that you can still run the code by explicitly typing out the commands you will find in the make file if you have difficulties setting it up
+- You can find directions on how to setup make files here(<>)
 
 ### Testing
 
@@ -102,10 +105,11 @@ Run `npm run lintCheck` to run eslint using 'prettier' code formatter
 
 -
 
-### API EndPoints
+### API
 
-- local developement <http://localhost:9090/events>
-- remote developement
+Since the project is built with NEXt, the frontend and backend have been set up in this project.
+
+You can have access to the api through `pages/api`
 
 ## HOSTING
 
