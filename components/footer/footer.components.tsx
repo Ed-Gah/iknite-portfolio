@@ -9,8 +9,8 @@ import { IconType } from "@/types/icontypes/icon.type";
 
 const Footer = () => {
   return (
-    <div className="max-w-[1200px] mx-auto border-t border-white">
-      <div className="flex justify-between items-center">
+    <div className=" border-t border-white w-full">
+      <div className="flex justify-between items-center w-full">
         <Image src={logo} height={100} width={100} alt="Logo" />
         <ul className=" flex gap-6">
           {footerItems.map((footerItem: NavItem) => {

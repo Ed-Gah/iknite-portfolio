@@ -20,12 +20,15 @@ const Layout: FC<Props> = ({ children, crumbs }) => {
         <header className=" fixed top-0 z-[55] w-full">
           <Navbar />
         </header>
-        {/* Footer here */}
-        <footer className=" fixed bottom-0 z-[55] h-[200px] w-full pt-6 pb-14">
-          <Footer />
-        </footer>
+        <div>
+          {/* Section */}
+          <section className="px-28">{children}</section>
+          {/* Footer here */}
+          <footer className=" bg-[#161513] h-[200px] w-screen pt-6 pb-14 px-16">
+            <Footer />
+          </footer>
+        </div>
       </Fragment>
-      <section className="px-6 mx-auto">{children}</section>
     </section>
   );
 };
