@@ -1,11 +1,12 @@
+import { MemberCard } from "..";
 
 
 
 export default function TeamMembers(){
 
     return (
-        <div className="mt-10 ">
-            <section className="flex gap-5">
+        <div className="mt-10">
+            <section className="w-full flex justify-center gap-5 mb-16">
                 <div>
                     <input type="radio" name="btn" id="btn_1" className="sr-only peer"/>
                     <label htmlFor="btn_1" className="peer-checked:[&>section]:bg-clip-border peer-checked:[&>section]:bg-gradient-to-r peer-checked:[&>section]:from-[#B16CEA] peer-checked:[&>section]:via-[#FF5E69] peer-checked:[&>section]:to-[#FFA84B]">
@@ -29,8 +30,13 @@ export default function TeamMembers(){
                 </div>
             </section>
 
-            <section>
-                
+            <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+                <MemberCard />
+                <MemberCard />
+                <MemberCard />
+                <MemberCard />
+                <MemberCard />
+                <MemberCard />
             </section>
         </div>
     )

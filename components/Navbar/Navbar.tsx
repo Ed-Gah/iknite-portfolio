@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import image from '../assets/images/iknite-logo.png'
+import image from '../../assets/images/iknite-logo.png'
 import Image from 'next/image'
 import { Icons } from '..'
 import { IconType } from '@/types/icontypes/icon.type'
