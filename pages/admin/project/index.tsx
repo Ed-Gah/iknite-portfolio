@@ -1,7 +1,7 @@
 import React from "react";
-import Dashboard from "../../components/admin/Dashboard";
 import Layout from "@/components/admin/Layout";
 import ProjectList from "@/components/admin/project/ProjectList";
+import Dashboard from "@/components/admin/Dashboard";
 
 
 

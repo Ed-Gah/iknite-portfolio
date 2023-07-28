@@ -1,13 +1,9 @@
 import React from "react";
-import EventItem from "./EventItem";
+import ProjetItem from "./Member";
 import Link from "next/link";
-import { EventTypes } from "../../../types/events.typing";
+import Member from "./Member";
 
-interface Props {
-  events: EventTypes[];
-}
-
-export default function EventList({ events }: Props) {
+export default function Members() {
   return (
     <div>
       <div className="shadow-xs w-full overflow-hidden rounded-lg">
@@ -19,22 +15,14 @@ export default function EventList({ events }: Props) {
           <table className="whitespace-no-wrap w-full">
             _
             <tr className="border-b bg-gray-50 text-left text-xs font-semibold uppercase tracking-wide text-gray-500 dark:bg-gray-800 dark:text-gray-400">
-              <th className="px-4 py-3"></th>
               <th className="px-4 py-3">Name</th>
-              <th className="px-4 py-3">Date</th>
+              <th className="px-4 py-3">Description</th>
               <th className="px-4 py-3">Actions</th>
             </tr>
-            {/* <tbody className="divide-y bg-white"> */}
-            {events.map((event) => (
-              <EventItem
-                key={event.id}
-                id={event.id}
-                title={event.title}
-                date={event.Date}
-                cover_image={event.cover_photo}
-              />
-            ))}
-            {/* </tbody> */}
+            <Member />
+            <Member />
+            <Member />
+            <Member />
           </table>
         </div>
       </div>
