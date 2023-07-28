@@ -13,12 +13,12 @@ export default function Layout({ children }: any) {
       <Navbar />
       <div className="flex w-full">
 
-        <div className="lg:w-1/4">
+        <div className="w-1/4">
           {" "}
-          <Sidebar />{" "}
+          <Sidebar />
         </div>
 
-        <div className=" container mx-auto mt-[50px] w-3/4">{children}</div>
+        <div className="mx-auto w-3/4">{children}</div>
       </div>
     </div>
   );

@@ -8,14 +8,14 @@ export default function index() {
   return (
     <div>
       <Layout>
-
-      </Layout>
       <div className="  container">
         <Dashboard />
 
         {/* Projet list below */}
         
       </div>{" "}
+      </Layout>
+    
     </div>
   );
 }
