@@ -4,7 +4,7 @@
 export default function TeamMembers(){
 
     return (
-        <div className="mt-10">
+        <div className="mt-10 ">
             <section className="flex gap-5">
                 <div>
                     <input type="radio" name="btn" id="btn_1" className="sr-only peer"/>
