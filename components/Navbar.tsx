@@ -20,7 +20,7 @@ export default function Navbar() {
               <Link href="/">Home</Link>
             </li>
             <li className="block lg:inline-block hover:bg-red-400">
-              <Link href="/contact">About</Link>
+              <Link href="https://iknite.space">About</Link>
             </li>
             <li className="block lg:inline-block hover:bg-red-400">
               <Link href="/about">Project</Link>
