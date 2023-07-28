@@ -26,7 +26,7 @@ export const MobileMenu = ({ setShowNav }: Props) => {
           About
         </Link>
         <Link
-          href={"/"}
+          href={"/projects"}
           onClick={() => {
             setShowNav(false);
           }}
@@ -35,7 +35,7 @@ export const MobileMenu = ({ setShowNav }: Props) => {
           Projects
         </Link>
         <Link
-          href={"/"}
+          href={"/team"}
           onClick={() => {
             setShowNav(false);
           }}
@@ -44,7 +44,7 @@ export const MobileMenu = ({ setShowNav }: Props) => {
           Team
         </Link>
         <Link
-          href={"/"}
+          href={"/events"}
           onClick={() => {
             setShowNav(false);
           }}
