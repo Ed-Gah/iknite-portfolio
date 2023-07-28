@@ -2,8 +2,7 @@
 import React, { FC, Fragment } from "react";
 
 import { useRouter } from "next/navigation";
-import { Footer } from "..";
-import Navbar from "../Navbar";
+import { Navbar, Footer } from "..";
 
 interface Props {
   children: any;
