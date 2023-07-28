@@ -16,7 +16,7 @@ const Layout: FC<Props> = ({ children, crumbs }) => {
     <section className=" flex bg-[var(--neutral-1)] w-full h-full">
       <Fragment>
         {/* Header here */}
-        <header className=" fixed top-0 z-[55] w-full border-b ">
+        <header className=" fixed top-0 z-[55] w-full border-b bg-black">
           <Navbar />
         </header>
         {/* Footer here */}
