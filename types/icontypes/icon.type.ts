@@ -61,4 +61,7 @@ export enum IconType {
   FACEBOOK = "facebook",
   TWITTER = "twitter",
   INSTAGRAM = "instagram",
+  GITHUB = "github",
+  LINKEDIN = "linkedin",
+  BEHANCE ="behance",
 }
