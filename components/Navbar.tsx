@@ -23,13 +23,13 @@ export default function Navbar() {
               <Link href="https://iknite.space">About</Link>
             </li>
             <li className="block lg:inline-block hover:bg-red-400">
-              <Link href="/about">Project</Link>
+              <Link href="/projects">Project</Link>
             </li>
             <li className="block lg:inline-block hover:bg-red-400">
-              <Link href="/about">Team</Link>
+              <Link href="/team">Team</Link>
             </li>
             <li className="block lg:inline-block hover:bg-red-400">
-              <Link href="/about">Events</Link>
+              <Link href="/events">Events</Link>
             </li>
           </ul>
         </div>
