@@ -42,7 +42,7 @@ export default function EventMainComponent() {
 
       <section className="w-full grid grid-cols-1 md:grid-cols-2 gap-14">
         <Cards
-          image={image}
+          image={""}
           title={"Cliqkets"}
           details={
             "This is just a placeholder fir the data that will be fetched from the backend that was built by our able engineers. This code will not make it to production."
@@ -50,7 +50,7 @@ export default function EventMainComponent() {
           id={""}
         />
         <Cards
-          image={image}
+          image={""}
           title={"Cliqkets"}
           details={
             "This is just a placeholder fir the data that will be fetched from the backend that was built by our able engineers. This code will not make it to production."
@@ -58,7 +58,7 @@ export default function EventMainComponent() {
           id={""}
         />
         <Cards
-          image={image}
+          image={""}
           title={"Cliqkets"}
           details={
             "This is just a placeholder fir the data that will be fetched from the backend that was built by our able engineers. This code will not make it to production."
@@ -66,7 +66,7 @@ export default function EventMainComponent() {
           id={""}
         />
         <Cards
-          image={image}
+          image={""}
           title={"Cliqkets"}
           details={
             "This is just a placeholder fir the data that will be fetched from the backend that was built by our able engineers. This code will not make it to production."
@@ -74,7 +74,7 @@ export default function EventMainComponent() {
           id={""}
         />
         <Cards
-          image={image}
+          image={""}
           title={"Cliqkets"}
           details={
             "This is just a placeholder fir the data that will be fetched from the backend that was built by our able engineers. This code will not make it to production."
@@ -82,7 +82,7 @@ export default function EventMainComponent() {
           id={""}
         />
         <Cards
-          image={image}
+          image={""}
           title={"Cliqkets"}
           details={
             "This is just a placeholder fir the data that will be fetched from the backend that was built by our able engineers. This code will not make it to production."

@@ -1,7 +1,50 @@
-import { Cards } from "..";
-import image from "../../assets/images/card.png";
+import { Cards, Layout } from "..";
+import { useGetProjectsData } from "@/query";
+
 
 export default function ProjectMainComponent() {
+
+
+    /**
+   * Methods
+   */
+  const onSuccess = (data: any) => {
+    console.log({ data });
+    // setDraftData(filteredData(data?.data, "Draft"));
+    // setProgressData(filteredData(data?.data, "In Progress"));
+    // setValidatedData(filteredData(data?.data, "Validated"));
+    // setReviewedData(filteredData(data?.data, "Reviewed"));
+  };
+
+  const onError = (error: any) => {
+    console.log("Perform sid effect after error fecthing :", error);
+  };
+  const { isLoading, isError, data, error, isFetching, refetch } =
+    useGetProjectsData(onSuccess, onError) as any;
+  console.log("Datatatatata :", { data });
+
+  if (isLoading) {
+    return (
+      <Layout>
+        <div className="mt-32 text-white">
+          <h2>Projects loading.....</h2>
+        </div>
+      </Layout>
+    );
+  }
+
+  if (isError) {
+    return (
+      <Layout>
+        <div className="mt-32 text-white">
+          <h2>{error?.message}</h2>
+        </div>
+      </Layout>
+    );
+  }
+
+
+
   return (
     <div className="mt-10">
       <section className="w-full flex justify-center gap-5 mb-16">
@@ -55,54 +98,45 @@ export default function ProjectMainComponent() {
       </section>
 
       <section className="w-full grid grid-cols-1 md:grid-cols-2 gap-14">
+      {/* {data?.data?.data.map((data: any, i: number) => {
+        return (
+          <Cards
+            key={i}
+            id={data._id}
+            title={data.title}
+            image={data.coverImage}
+            details={data?.details}
+          />
+        );
+      })} */}
+
         <Cards
-          image={image}
+          image={""}
           title={"Cliqkets"}
           details={
             "This is just a placeholder fir the data that will be fetched from the backend that was built by our able engineers. This code will not make it to production."
           }
           id={""}
         />
+
         <Cards
-          image={image}
+          image={""}
           title={"Cliqkets"}
           details={
             "This is just a placeholder fir the data that will be fetched from the backend that was built by our able engineers. This code will not make it to production."
           }
           id={""}
         />
+
         <Cards
-          image={image}
+          image={""}
           title={"Cliqkets"}
           details={
             "This is just a placeholder fir the data that will be fetched from the backend that was built by our able engineers. This code will not make it to production."
           }
           id={""}
         />
-        <Cards
-          image={image}
-          title={"Cliqkets"}
-          details={
-            "This is just a placeholder fir the data that will be fetched from the backend that was built by our able engineers. This code will not make it to production."
-          }
-          id={""}
-        />
-        <Cards
-          image={image}
-          title={"Cliqkets"}
-          details={
-            "This is just a placeholder fir the data that will be fetched from the backend that was built by our able engineers. This code will not make it to production."
-          }
-          id={""}
-        />
-        <Cards
-          image={image}
-          title={"Cliqkets"}
-          details={
-            "This is just a placeholder fir the data that will be fetched from the backend that was built by our able engineers. This code will not make it to production."
-          }
-          id={""}
-        />
+        
       </section>
     </div>
   );
