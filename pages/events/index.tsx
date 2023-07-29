@@ -17,7 +17,7 @@ const Events = () => {
     return (
       <Layout>
         <div className="mt-32 text-white">
-          <h2>Projects loading.....</h2>
+          <h2>Events loading.....</h2>
         </div>
       </Layout>
     );
