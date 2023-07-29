@@ -18,6 +18,10 @@ import HomeTeam from "./HomeTeam/HomeTeam";
 import Footer from "./footer/footer.components";
 import HomeTeamCards from "./HomeTeamCards/HomeTeamCards";
 import LookAtOurSpaceEvents from "./LookAtOurSpaceEvents/LookAtOurSpaceEvents";
+import EventDescription from "./EventDescription/EventDescription";
+import EventTeamMembers from "./EventTeamMembers/EventTeamMembers";
+import TeamCard from "./TeamCard/TeamCard";
+import WinningTeam from "./WinningTeam/WinningTeam";
 import UserPersonaComponent from "./ProjectDetailsComponent/UserPersonaComponent/UserPersonaComponent";
 
 
@@ -28,7 +32,11 @@ export {
     TeamHeader, 
     LookAtOurSpaceEvents,
     TeamMembers, 
+    TeamCard,
+    WinningTeam,
     MemberCard, 
+    EventDescription,
+    EventTeamMembers,
     HomeProjects,
     HomeEvents,
     HomeTeamCards,

@@ -63,7 +63,7 @@ const Footer = () => {
           />
         </div>
         <div className=" float-left mt-8">
-          <h6 className="text-white">@ Design By Inkite.space</h6>
+          <h6 className="text-white">@ Design By Iknite.space</h6>
         </div>
       </div>
     </div>
