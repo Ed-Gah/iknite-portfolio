@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import { Cards, Layout, ProjectsBanner } from "@/components";
-=======
-import { Layout, ProjectsBanner, ProjectMainComponent } from "@/components";
->>>>>>> 4883d9b3ee5718547742e642b8a185750b4a81d2
 import React from "react";
 import { useGetProjectsData } from "@/query";
 
