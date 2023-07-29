@@ -1,7 +1,7 @@
 import { Cards } from "..";
 import image from '../../assets/images/card.png'
 
-export default function EventMainComponent(){
+export default function ProjectMainComponent(){
 
     return (
         <div className="mt-10">
@@ -11,7 +11,7 @@ export default function EventMainComponent(){
                 <label htmlFor="btn_1" className="peer-checked:[&>section]:bg-clip-border peer-checked:[&>section]:bg-gradient-to-r peer-checked:[&>section]:from-[#B16CEA] peer-checked:[&>section]:via-[#FF5E69] peer-checked:[&>section]:to-[#FFA84B]">
                     <section className="border-2 border-transparent cursor-pointer rounded-full overflow-hidden">
                         <div className="bg-[#161513] px-6 py-2 w-full flex items-center justify-center">
-                            <h2 className="text-sm text-white">Previous</h2>
+                            <h2 className="text-sm text-white">Featured</h2>
                         </div>  
                     </section>
                 </label>
@@ -22,7 +22,19 @@ export default function EventMainComponent(){
                 <label htmlFor="btn_2" className="peer-checked:[&>section]:bg-clip-border peer-checked:[&>section]:bg-gradient-to-r peer-checked:[&>section]:from-[#B16CEA] peer-checked:[&>section]:via-[#FF5E69] peer-checked:[&>section]:to-[#FFA84B]">
                     <section className="border-2 border-transparent cursor-pointer rounded-full overflow-hidden">
                         <div className="bg-[#161513] px-6 py-2 w-full flex items-center justify-center">
-                            <h2 className="text-sm text-white">Future</h2>
+                            <h2 className="text-sm text-white">Ongoing</h2>
+                        </div>  
+                    </section>
+                </label>
+            </div>
+
+
+            <div>
+                <input type="radio" name="btn" id="btn_3" className="sr-only peer"/>
+                <label htmlFor="btn_3" className="peer-checked:[&>section]:bg-clip-border peer-checked:[&>section]:bg-gradient-to-r peer-checked:[&>section]:from-[#B16CEA] peer-checked:[&>section]:via-[#FF5E69] peer-checked:[&>section]:to-[#FFA84B]">
+                    <section className="border-2 border-transparent cursor-pointer rounded-full overflow-hidden">
+                        <div className="bg-[#161513] px-6 py-2 w-full flex items-center justify-center">
+                            <h2 className="text-sm text-white">Sneaks</h2>
                         </div>  
                     </section>
                 </label>
