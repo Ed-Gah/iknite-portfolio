@@ -10,7 +10,7 @@ type Props = {
  * @param,image title, details
  * @returns
  */
-export const Cards = ({ image, title, details }: Props) => {
+const Cards = ({ image, title, details }: Props) => {
   return (
     <div className="max-w-lg bg-white overflow-hidden rounded-[16px] shadow dark:bg-gray-800 dark:border-gray-700">
       <a href="#">
@@ -29,3 +29,5 @@ export const Cards = ({ image, title, details }: Props) => {
     </div>
   );
 };
+
+export default Cards;
