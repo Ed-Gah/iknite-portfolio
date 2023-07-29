@@ -26,21 +26,17 @@ export default function ProjectMainComponent() {
 
   if (isLoading) {
     return (
-      <Layout>
         <div className="mt-32 text-white">
           <h2>Projects loading.....</h2>
         </div>
-      </Layout>
     );
   }
 
   if (isError) {
     return (
-      <Layout>
         <div className="mt-32 text-white">
           <h2>{error?.message}</h2>
         </div>
-      </Layout>
     );
   }
   return (
@@ -113,7 +109,7 @@ export default function ProjectMainComponent() {
                   id={data._id}
                   title={data.title}
                   image={data?.coverImage}
-                  details={data?.details}
+                  details={data?.description}
                 />
               );
             })
@@ -125,7 +121,7 @@ export default function ProjectMainComponent() {
                   id={data._id}
                   title={data.title}
                   image={data?.coverImage}
-                  details={data?.details}
+                  details={data?.description}
                 />
               );
             })
@@ -136,7 +132,7 @@ export default function ProjectMainComponent() {
                   id={data._id}
                   title={data.title}
                   image={data?.coverImage}
-                  details={data?.details}
+                  details={data?.description}
                 />
               );
             })}
