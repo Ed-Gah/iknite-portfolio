@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Sidebar({ isNavOpen }: any) {
   
   return (
-    <div className="border ">
+    <div className=" ">
       <div className={isNavOpen ? "block lg:block" : "hidden lg:block"}>
         <div className=" left-0 z-20 h-screen overflow-y-auto px-5 md:block">
           <div className="py-4 text-gray-500 ">
