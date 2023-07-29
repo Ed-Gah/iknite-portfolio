@@ -9,7 +9,7 @@ export default function ProjectList() {
       <div className="shadow-xs w-full overflow-hidden rounded-lg">
         <span className="p-3 border float-right my-3 flex w-fit">
           {" "}
-          <Link href="/organizer/create">Create Project</Link>
+          <Link href="/admin/project/create">Create Project</Link>
         </span>
         <div className="w-full overflow-x-auto">
           <table className="whitespace-no-wrap w-full">
