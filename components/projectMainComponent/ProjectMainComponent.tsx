@@ -13,7 +13,6 @@ export default function ProjectMainComponent() {
   const [sneak, setSneak] = useState<any[]>([]);
   const [type, setType] = useState("featured");
   const onSuccess = (data: any) => {
-<<<<<<< HEAD
     setFeatured(
       filteredData(
         filteredData(data.data.data, "production", "type"),
@@ -26,10 +25,6 @@ export default function ProjectMainComponent() {
       "ongoing",
       "status"
     ));
-=======
-    setFeatured(filteredData(data.data.data, "featured", "status"));
-    setOngoing(filteredData(data.data.data, "ongoing", "status"));
->>>>>>> c6a70a95c382cd054756b4a5356f4a3998913d64
     setSneak(filteredData(data.data.data, "sneak", "type"));
   };
 
@@ -124,11 +119,7 @@ export default function ProjectMainComponent() {
                   id={data._id}
                   title={data.title}
                   image={data?.coverImage}
-<<<<<<< HEAD
-                  details={data?.details}
-=======
                   details={data?.description}
->>>>>>> c6a70a95c382cd054756b4a5356f4a3998913d64
                 />
               );
             })
@@ -140,11 +131,7 @@ export default function ProjectMainComponent() {
                   id={data._id}
                   title={data.title}
                   image={data?.coverImage}
-<<<<<<< HEAD
-                  details={data?.details}
-=======
                   details={data?.description}
->>>>>>> c6a70a95c382cd054756b4a5356f4a3998913d64
                 />
               );
             })
@@ -155,11 +142,7 @@ export default function ProjectMainComponent() {
                   id={data._id}
                   title={data.title}
                   image={data?.coverImage}
-<<<<<<< HEAD
-                  details={data?.details}
-=======
                   details={data?.description}
->>>>>>> c6a70a95c382cd054756b4a5356f4a3998913d64
                 />
               );
             })}
