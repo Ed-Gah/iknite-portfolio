@@ -55,11 +55,11 @@ export default function Navbar() {
                   onMouseLeave={() => setHover(false)}
                 >
                   {navItem.name === "About" ? (
-                    <Link href={"https://iknite.space"} className="px-2 py-1">
+                    <Link href={"https://iknite.space"} className="px-2 py-4">
                       {navItem.name}
                     </Link>
                   ) : (
-                    <Link href={navItem.href} className="px-2 py-1">
+                    <Link href={navItem.href} className="px-2 py-4">
                       {navItem.name}
                     </Link>
                   )}
