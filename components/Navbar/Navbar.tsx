@@ -22,11 +22,12 @@ export default function Navbar() {
       setActiveTitle(query);
     }
   }, []);
-
   return (
     <div className="flex px-4 h-[88px] py-6 justify-between items-center max-w-[1200px] mx-auto ">
       <div className="flex">
-        <div className="pr-20 flex-shrink-0 ">
+        <div onClick={()=>{
+          router.push('/')
+        }} className="pr-20 flex-shrink-0 cursor-pointer ">
           <Image src={logo} height={78} width={86} alt="..." />
         </div>
         <div className="hidden w-full flex-grow md:flex lg:w-auto items-center lg:space-x-4">
