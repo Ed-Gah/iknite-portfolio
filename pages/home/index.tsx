@@ -1,5 +1,4 @@
-import { Layout } from "@/components";
-import { Banner } from "@/components/Banner";
+import { Layout, Banner } from "@/components";
 import React from "react";
 import Home from "../home/Home";
 
