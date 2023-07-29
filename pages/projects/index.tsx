@@ -1,5 +1,4 @@
-import { Layout } from "@/components";
-import { ProjectsBanner } from "@/components/ProjectsBanner";
+import { Layout, ProjectsBanner } from "@/components";
 import React from "react";
 
 const WelcomePage = () => {

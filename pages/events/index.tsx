@@ -1,5 +1,5 @@
 import { Cards, Layout } from "@/components";
-import { EventsBanner } from "@/components/EventsBanner";
+import { EventsBanner } from "@/components";
 import image from '../../assets/images/card.png'
 import React from "react";
 
