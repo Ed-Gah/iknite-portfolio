@@ -30,7 +30,7 @@ export default function TeamMembers(){
                 </div>
             </section>
 
-            <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+            <section className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
                 <MemberCard glance={{
                     name: "",
                     image: "",
