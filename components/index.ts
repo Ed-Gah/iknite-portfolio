@@ -8,11 +8,14 @@ import Navbar from "./Navbar/Navbar";
 import EventsBanner from "./eventBanner/EventsBanner";
 import ProjectCard from "./ProjectCard/ProjectCard";
 import ProjectsBanner from "./ProjectsBanner/ProjectsBanner";
+import Cards from "./cards/Cards";
+
 import Footer from "./footer/footer.components";
 
 export { 
     Icons, 
     Layout, 
+    Cards,
     TeamHeader, 
     TeamMembers, 
     MemberCard, 
