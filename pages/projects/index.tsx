@@ -1,7 +1,6 @@
-import { Cards, Layout, ProjectsBanner } from "@/components";
-import React from "react";
-import image from "../../assets/images/card.png";
+import { Cards, Layout, ProjectMainComponent, ProjectsBanner } from "@/components";
 import { useGetProjectsData } from "@/query";
+import React from "react";
 
 const Projects = () => {
   /**
@@ -33,23 +32,12 @@ const Projects = () => {
       </Layout>
     );
   }
+
   return (
     <Layout>
       <div className="max-w-[1200px] flex flex-col items-center text-white">
         <ProjectsBanner />
-        <section className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-10">
-          {data?.data?.data.map((data: any, i: number) => {
-            return (
-              <Cards
-                key={i}
-                id={data._id}
-                title={data.title}
-                image={data?.coverImage}
-                details={data?.details}
-              />
-            );
-          })}
-        </section>
+        <ProjectMainComponent />
       </div>
     </Layout>
   );
