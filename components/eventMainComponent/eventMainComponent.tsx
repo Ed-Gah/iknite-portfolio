@@ -1,5 +1,4 @@
 import { Cards, Layout } from "..";
-import image from "../../assets/images/card.png";
 import { useGetEventsData } from "@/query";
 
 export default function EventMainComponent() {
@@ -50,7 +49,7 @@ export default function EventMainComponent() {
           >
             <section className="border-2 border-transparent cursor-pointer rounded-full overflow-hidden">
               <div className="bg-[#161513] px-6 py-2 w-full flex items-center justify-center">
-                <h2 className="text-sm text-white">Previous</h2>
+                <h2 className="text-2xl text-white">Previous</h2>
               </div>
             </section>
           </label>
@@ -64,7 +63,7 @@ export default function EventMainComponent() {
           >
             <section className="border-2 border-transparent cursor-pointer rounded-full overflow-hidden">
               <div className="bg-[#161513] px-6 py-2 w-full flex items-center justify-center">
-                <h2 className="text-sm text-white">Future</h2>
+                <h2 className="text-2xl text-white">Future</h2>
               </div>
             </section>
           </label>
@@ -77,7 +76,7 @@ export default function EventMainComponent() {
                 <Cards
                 key={i}
                 id={event._id}
-                image={image}
+                image={event?.coverImage}
                 title={event.title}
                 details={event.description}
                 />

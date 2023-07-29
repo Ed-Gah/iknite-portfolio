@@ -63,7 +63,7 @@ export default function ProjectMainComponent() {
               onClick={() => setType("featured")}
             >
               <div className="bg-[#161513] px-6 py-2 w-full flex items-center justify-center">
-                <h2 className="text-sm text-white">Featured</h2>
+                <h2 className="text-2xl text-white">Featured</h2>
               </div>
             </section>
           </label>
@@ -80,7 +80,7 @@ export default function ProjectMainComponent() {
               onClick={() => setType("ongoing")}
             >
               <div className="bg-[#161513] px-6 py-2 w-full flex items-center justify-center">
-                <h2 className="text-sm text-white">Ongoing</h2>
+                <h2 className="text-2xl text-white">Ongoing</h2>
               </div>
             </section>
           </label>
@@ -97,7 +97,7 @@ export default function ProjectMainComponent() {
               onClick={() => setType("sneak")}
             >
               <div className="bg-[#161513] px-6 py-2 w-full flex items-center justify-center">
-                <h2 className="text-sm text-white">Sneaks</h2>
+                <h2 className="text-2xl text-white">Sneaks</h2>
               </div>
             </section>
           </label>

@@ -1,6 +1,13 @@
-import React from "react";
+import { useGetMembersData, useGetProjectsData } from "@/query";
+import React, { useState } from "react";
 
 export default function Dashboard() {
+  const onSuccess = (data: any) => {
+  };
+
+  const onError = (error: any) => {};
+ 
+
   return (
     <div>
       <div className=" mb-8 grid gap-4  md:grid-cols-3 xl:grid-cols-3">
@@ -9,10 +16,13 @@ export default function Dashboard() {
             TM
           </div>
           <div>
-            <p className="mb-2 text-sm font-medium text-white ">
-              Team Members
+            <p className="mb-2 text-sm font-medium text-white ">Team Members</p>
+            <p className="text-lg font-semibold text-white ">
+              {useGetMembersData(
+    onSuccess,
+    onError
+  ).data.data.data.length}
             </p>
-            <p className="text-lg font-semibold text-white ">12</p>
           </div>
         </div>
         <div className="shadow-xs flex items-center rounded-lg bg-gray-800 text-white p-4">
@@ -21,9 +31,11 @@ export default function Dashboard() {
           </div>
           <div>
             <p className="mb-2 text-sm font-medium text-white ">
-             Number of Projects
+              Number of Projects
             </p>
-            <p className="text-lg font-semibold text-white ">5000frs</p>
+            <p className="text-lg font-semibold text-white ">
+              {useGetProjectsData(onSuccess, onError).data.data.data.length}
+            </p>
           </div>
         </div>
         <div className="shadow-xs flex items-center rounded-lg bg-gray-800 text-white p-4 ">
@@ -37,7 +49,6 @@ export default function Dashboard() {
             <p className="text-lg font-semibold text-white ">6</p>
           </div>
         </div>
-      
       </div>
     </div>
   );

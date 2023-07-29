@@ -20,7 +20,7 @@ type Team = {
 export default function MemberCard({glance}:Team) {
   return (
     <div className="">
-        <div className="relative w-64 sm:w-full h-[19rem] sm:h-[400px] overflow-hidden rounded-3xl border border-neutral-900 bg-white flex-col justify-start items-start gap-2 inline-flex">
+        <div className="relative w-64 sm:w-full h-[19rem] sm:h-[595px] overflow-hidden rounded-3xl border border-neutral-900 bg-white flex-col justify-start items-start gap-2 inline-flex">
             <div className="w-full h-full">
                 <img src={glance.image} alt={""} className="h-full w-auto aspect-video object-cover object-center"/>
             </div>
@@ -75,7 +75,7 @@ export default function MemberCard({glance}:Team) {
                         }
                         {
                             glance.socialHandles?.behance &&
-                            <div className="w-10 h-10 border border-slate-900">
+                            <div className="w-7 h-7 border border-slate-900 flex items-center justify-center rounded-full">
                                 <a href={glance.socialHandles?.behance} target="_blank" rel="noreferrer" className="text-neutral-900 hover:text-neutral-800">
                                     <Icons
                                         icon={IconType.BEHANCE}
