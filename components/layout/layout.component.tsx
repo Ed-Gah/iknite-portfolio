@@ -21,7 +21,7 @@ const Layout: FC<Props> = ({ children, crumbs }) => {
         </header>
         <div>
           {/* Section */}
-          <section className="flex flex-col items-center">{children}</section>
+          <section className="flex max-w-[1200px] mx-auto px-4 flex-col items-center">{children}</section>
           {/* Footer here */}
           <footer className=" bg-[#161513] h-[200px] w-screen pt-6 pb-14">
             <div className=" max-w-[1200px] mx-auto p-4">
