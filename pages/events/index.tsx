@@ -7,7 +7,7 @@ const WelcomePage = () => {
   return (
     <Layout>
       <EventsBanner />
-      <Cards image={image} title={'Cliqkets'} details={'This is just a placeholder fir the data that will be fetched from the backend that was built by our able engineers. This code will not make it to production.'} />
+      <Cards image={image} title={'Cliqkets'} details={'This is just a placeholder for the data that will be fetched from the backend that was built by our able engineers. This code will not make it to production.'} />
     </Layout>
   );
 };
