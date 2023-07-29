@@ -1,4 +1,5 @@
 import { Cards, Layout, ProjectMainComponent, ProjectsBanner } from "@/components";
+import { useGetProjectsData } from "@/query";
 import React from "react";
 
 const Projects = () => {

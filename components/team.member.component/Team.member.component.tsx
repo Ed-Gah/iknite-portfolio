@@ -89,7 +89,7 @@ export default function TeamMembers() {
                 key={i}
                 glance={{
                   name: member.name || "Member name",
-                  image: `/${member.image}` || "",
+                  image: `${member.image}` || "",
                   role: member.department || "member role",
                   socialHandles: member.socialHandles || undefined,
                 }}
@@ -100,7 +100,7 @@ export default function TeamMembers() {
                 key={i}
                 glance={{
                   name: member.name || "Member name",
-                  image: `/${member.image}` || "",
+                  image: `${member.image}` || "",
                   role: member.department || "member role",
                   socialHandles: member.socialHandles || undefined,
                 }}

@@ -1,9 +1,8 @@
 import { StaticImageData } from "next/image";
-import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 type Props = {
-  image: StaticImageData;
+  image: string;
   title: string;
   details: string;
   id?: string;
@@ -20,7 +19,7 @@ const Cards = ({ image, title, details, id }: Props) => {
       router.push(`/events/${id}`)
     }} className="max-w-[566px] bg-white overflow-hidden rounded-[16px] shadow dark:bg-gray-800 dark:border-gray-700">
       <a href="#">
-        <Image className="rounded-t-lg" src={image} alt="" />
+        <img className="rounded-t-lg" src={image} width={566} height={566} alt="" />
       </a>
       <div className="p-5">
         <Link href={`/events/${id}`}>

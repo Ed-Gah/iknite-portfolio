@@ -24,7 +24,6 @@ import TeamCard from "./TeamCard/TeamCard";
 import WinningTeam from "./WinningTeam/WinningTeam";
 import UserPersonaComponent from "./ProjectDetailsComponent/UserPersonaComponent/UserPersonaComponent";
 
-
 export { 
     Icons, 
     Layout, 
