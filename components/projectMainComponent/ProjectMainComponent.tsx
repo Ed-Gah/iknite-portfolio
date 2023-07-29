@@ -13,8 +13,18 @@ export default function ProjectMainComponent() {
   const [sneak, setSneak] = useState<any[]>([]);
   const [type, setType] = useState("featured");
   const onSuccess = (data: any) => {
-    setFeatured(filteredData(data.data.data, "featured", "status"));
-    setOngoing(filteredData(data.data.data, "ongoing", "status"));
+    setFeatured(
+      filteredData(
+        filteredData(data.data.data, "production", "type"),
+        "featured",
+        "status"
+      )
+    );
+    setOngoing(filteredData(
+      filteredData(data.data.data, "production", "type"),
+      "ongoing",
+      "status"
+    ));
     setSneak(filteredData(data.data.data, "sneak", "type"));
   };
 
