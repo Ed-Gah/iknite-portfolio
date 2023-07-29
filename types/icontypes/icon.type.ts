@@ -64,4 +64,5 @@ export enum IconType {
   GITHUB = "github",
   LINKEDIN = "linkedin",
   BEHANCE ="behance",
+  DRIBBBLE = "dribbble",
 }
