@@ -13,6 +13,7 @@ export default function ProjectMainComponent() {
   const [sneak, setSneak] = useState<any[]>([]);
   const [type, setType] = useState("featured");
   const onSuccess = (data: any) => {
+<<<<<<< HEAD
     setFeatured(
       filteredData(
         filteredData(data.data.data, "production", "type"),
@@ -25,6 +26,10 @@ export default function ProjectMainComponent() {
       "ongoing",
       "status"
     ));
+=======
+    setFeatured(filteredData(data.data.data, "featured", "status"));
+    setOngoing(filteredData(data.data.data, "ongoing", "status"));
+>>>>>>> c6a70a95c382cd054756b4a5356f4a3998913d64
     setSneak(filteredData(data.data.data, "sneak", "type"));
   };
 
@@ -36,21 +41,17 @@ export default function ProjectMainComponent() {
 
   if (isLoading) {
     return (
-      <Layout>
         <div className="mt-32 text-white">
           <h2>Projects loading.....</h2>
         </div>
-      </Layout>
     );
   }
 
   if (isError) {
     return (
-      <Layout>
         <div className="mt-32 text-white">
           <h2>{error?.message}</h2>
         </div>
-      </Layout>
     );
   }
   return (
@@ -73,7 +74,7 @@ export default function ProjectMainComponent() {
               onClick={() => setType("featured")}
             >
               <div className="bg-[#161513] px-6 py-2 w-full flex items-center justify-center">
-                <h2 className="text-sm text-white">Featured</h2>
+                <h2 className="md:text-2xl text-white">Featured</h2>
               </div>
             </section>
           </label>
@@ -90,7 +91,7 @@ export default function ProjectMainComponent() {
               onClick={() => setType("ongoing")}
             >
               <div className="bg-[#161513] px-6 py-2 w-full flex items-center justify-center">
-                <h2 className="text-sm text-white">Ongoing</h2>
+                <h2 className="md:text-2xl text-white">Ongoing</h2>
               </div>
             </section>
           </label>
@@ -107,7 +108,7 @@ export default function ProjectMainComponent() {
               onClick={() => setType("sneak")}
             >
               <div className="bg-[#161513] px-6 py-2 w-full flex items-center justify-center">
-                <h2 className="text-sm text-white">Sneaks</h2>
+                <h2 className="md:text-2xl text-white">Sneaks</h2>
               </div>
             </section>
           </label>
@@ -123,7 +124,11 @@ export default function ProjectMainComponent() {
                   id={data._id}
                   title={data.title}
                   image={data?.coverImage}
+<<<<<<< HEAD
                   details={data?.details}
+=======
+                  details={data?.description}
+>>>>>>> c6a70a95c382cd054756b4a5356f4a3998913d64
                 />
               );
             })
@@ -135,7 +140,11 @@ export default function ProjectMainComponent() {
                   id={data._id}
                   title={data.title}
                   image={data?.coverImage}
+<<<<<<< HEAD
                   details={data?.details}
+=======
+                  details={data?.description}
+>>>>>>> c6a70a95c382cd054756b4a5356f4a3998913d64
                 />
               );
             })
@@ -146,7 +155,11 @@ export default function ProjectMainComponent() {
                   id={data._id}
                   title={data.title}
                   image={data?.coverImage}
+<<<<<<< HEAD
                   details={data?.details}
+=======
+                  details={data?.description}
+>>>>>>> c6a70a95c382cd054756b4a5356f4a3998913d64
                 />
               );
             })}

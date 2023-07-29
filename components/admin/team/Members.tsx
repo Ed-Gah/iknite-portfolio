@@ -1,9 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import ProjetItem from "./Member";
 import Link from "next/link";
 import Member from "./Member";
+import { useGetMembersData } from "@/query";
+import { filteredData } from "@/utils";
 
 export default function Members() {
+  const [members, setMembers] = useState<any[]>([]);
+  const onSuccess = (data: any) => {
+    console.log({ data });
+    setMembers(data.data.data);
+  };
+
+  const onError = (error: any) => {};
+  const { isLoading, isError, error } = useGetMembersData(
+    onSuccess,
+    onError
+  ) as any;
+  if (isLoading) {
+    return (
+      <div className=" text-white">
+        <h2>Teams loading.....</h2>
+      </div>
+    );
+  }
+  if (isError) {
+    return (
+      <div className=" text-white">
+        <h2>{error?.message}</h2>
+      </div>
+    );
+  }
+
   return (
     <div>
       <div className="shadow-xs w-full overflow-hidden rounded-lg">
@@ -19,21 +47,14 @@ export default function Members() {
               <th className="px-4 py-3">Role</th>
               <th className="px-4 py-3">Actions</th>
             </tr>
-            <Member
-              name="Tambua Evaristus"
-              role="Admin"
-              image="https://cliqkets.com/images/eva.jpeg"
-            />
+            {members.map((member) => (
               <Member
-              name="Tambua Evaristus"
-              role="Admin"
-              image="https://cliqkets.com/images/eva.jpeg"
-            />
-              <Member
-              name="Tambua Evaristus"
-              role="Admin"
-              image="https://cliqkets.com/images/eva.jpeg"
-            />
+                id={member._id}
+                name={member.name}
+                role={member.department}
+                image={member.image}
+              />
+            ))}
           </table>
         </div>
       </div>

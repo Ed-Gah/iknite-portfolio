@@ -4,8 +4,6 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head >
-        <title>iknite</title>
-      <link rel="shortcut icon" href="logo.png" />
       <meta
           name="description"
           content="Discover iknite, see our projects and experience our professional developers and designers."
