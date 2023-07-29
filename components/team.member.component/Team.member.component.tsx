@@ -16,17 +16,15 @@ export default function TeamMembers() {
   };
   console.log("Desinger role data: ", { designerRoleData });
   const onError = (error: any) => {
-    console.log("Perform sid effect after error fecthing :", error);
+    console.log("Perform sid effect after error fetching :", error);
   };
   const { isLoading, isError, data, error, isFetching, refetch } =
     useGetMembersData(onSuccess, onError) as any;
   if (isLoading) {
     return (
-      <Layout>
         <div className="mt-32 text-white">
           <h2>Teams loading.....</h2>
         </div>
-      </Layout>
     );
   }
   if (isError) {
@@ -40,7 +38,7 @@ export default function TeamMembers() {
   }
   return (
     <div className="mt-10">
-      <section className="w-full flex justify-center gap-8 mb-16">
+      <section className="w-full flex justify-center gap-4 mb-16">
         <div>
           <input
             type="radio"
@@ -58,7 +56,7 @@ export default function TeamMembers() {
               onClick={() => setIsDesigner(true)}
             >
               <div className="bg-[#161513] px-6 py-2 w-full flex items-center justify-center">
-                <h2 className="text-2xl text-white">Designer</h2>
+                <h2 className="text-[18px] md:text-2xl text-white">Designer</h2>
               </div>
             </section>
           </label>
@@ -75,14 +73,14 @@ export default function TeamMembers() {
               onClick={() => setIsDesigner(false)}
             >
               <div className="bg-[#161513] px-6 py-2 w-full flex items-center justify-center">
-                <h2 className="text-2xl text-white">Developer</h2>
+                <h2 className="text-[18px] md:text-2xl text-white">Developer</h2>
               </div>
             </section>
           </label>
         </div>
       </section>
       ​
-      <section className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+      <section className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {isDesigner
           ? designerRoleData.map((member: any, i: number) => (
               <MemberCard
