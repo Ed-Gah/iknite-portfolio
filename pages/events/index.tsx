@@ -6,7 +6,6 @@ import { useGetEventsData } from "@/query";
 
 const Events = () => {
   const onSuccess = (data: any) => {};
-
   const onError = (error: any) => {
     console.log("Perform sid effect after error fetching :", error);
   };
