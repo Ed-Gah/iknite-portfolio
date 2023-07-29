@@ -1,5 +1,5 @@
 import { Layout } from "@/components";
-import { EventsBanner } from "@/components/EventsBanner";
+import { EventsBanner } from "@/components";
 import React from "react";
 
 const WelcomePage = () => {
