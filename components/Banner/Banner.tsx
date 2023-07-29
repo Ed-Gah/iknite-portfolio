@@ -1,6 +1,7 @@
 import TeamPage from "@/pages/team";
 import { MemberCard } from "..";
 import { useState } from "react";
+import Pagination from "../pagination/Pagination";
 
 
 export const Banner = () => {
@@ -34,7 +35,7 @@ export const Banner = () => {
 </div>
 <div className="text-white text-xl font-bold">Designers</div>
 </div>
-<div className="grid grid-cols-12 gap-[100px]">
+{/* <div className="grid grid-cols-12 gap-[100px]">
   <div className="col-span-4">
     <MemberCard glance={glance} />
   </div>
@@ -44,7 +45,8 @@ export const Banner = () => {
   <div className="col-span-4">
     <MemberCard />
   </div>
-</div>
+</div> */}
+<Pagination />
     </div>
   );
 };
