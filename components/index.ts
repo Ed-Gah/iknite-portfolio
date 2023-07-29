@@ -18,6 +18,9 @@ import HomeTeam from "./HomeTeam/HomeTeam";
 import Footer from "./footer/footer.components";
 import HomeTeamCards from "./HomeTeamCards/HomeTeamCards";
 import LookAtOurSpaceEvents from "./LookAtOurSpaceEvents/LookAtOurSpaceEvents";
+import UserPersonaComponent from "./ProjectDetailsComponent/UserPersonaComponent/UserPersonaComponent";
+
+
 export { 
     Icons, 
     Layout, 
@@ -38,5 +41,6 @@ export {
     LookAtOurProjects,
     ProjectsBanner, 
     ProjectMainComponent, 
+    UserPersonaComponent,
     Footer 
 };

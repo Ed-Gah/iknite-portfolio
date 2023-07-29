@@ -20,7 +20,7 @@ type Team = {
 export default function MemberCard({glance}:Team) {
   return (
     <div className="">
-        <div className="relative w-64 sm:w-full h-[19rem] sm:h-[400px] overflow-hidden rounded-3xl border border-neutral-900 bg-white flex-col justify-start items-start gap-2 inline-flex">
+        <div className="relative w-64 sm:w-full h-[19rem] sm:h-[595px] overflow-hidden rounded-3xl border border-neutral-900 bg-white flex-col justify-start items-start gap-2 inline-flex">
             <div className="w-full h-full">
                 <img src={glance.image} alt={""} className="h-full w-auto aspect-video object-cover object-center"/>
             </div>
