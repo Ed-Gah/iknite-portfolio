@@ -3,6 +3,7 @@ import { FC } from "react";
 import {
   HiArrowNarrowDown,
   HiArrowNarrowUp,
+  HiArrowNarrowRight,
   HiDotsHorizontal,
   HiOutlineChevronDown,
   HiOutlineChevronLeft,
@@ -21,9 +22,10 @@ import {
   HiOutlinePresentationChartLine,
 } from "react-icons/hi";
 import { HiXMark } from "react-icons/hi2";
-import { BiLogoFacebookCircle } from "react-icons/bi";
+import { BiLogoFacebookCircle, BiLogoDribbble } from "react-icons/bi";
 import { AiOutlineTwitter, AiOutlineGithub, AiOutlineBehanceSquare } from "react-icons/ai";
 import { RiInstagramFill, RiLinkedinBoxFill } from "react-icons/ri";
+import { BsArrowRight } from "react-icons/bs";
 
 interface Props {
   className?: any;
@@ -91,6 +93,9 @@ const Icons: FC<Props> = ({
   if (icon === IconType.ARROW_UP) {
     Icon = HiArrowNarrowUp;
   }
+  if (icon === IconType.ARROW_RIGHT) {
+    Icon = HiArrowNarrowRight;
+  }
   if (icon === IconType.EDIT) {
     Icon = HiOutlinePencilAlt;
   }
@@ -127,9 +132,14 @@ const Icons: FC<Props> = ({
   if (icon === IconType.BEHANCE) {
     Icon = AiOutlineBehanceSquare;
   }
+  if (icon === IconType.DRIBBBLE) {
+    Icon = BiLogoDribbble;
+  }
   if (icon === IconType.INSTAGRAM) {
     Icon = RiInstagramFill;
   }
+
+  
   return (
     <Icon
       // color={color}

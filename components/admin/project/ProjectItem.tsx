@@ -8,7 +8,7 @@ interface Props{
 }
 export default function ProjectItem({title, description, image}:Props) {
   return (
-    <tr className="text-gray-700 dark:text-gra">
+    <tr className=" text-white">
   
     <td className="px-4 py-3">
       <div className="flex items-center text-sm">

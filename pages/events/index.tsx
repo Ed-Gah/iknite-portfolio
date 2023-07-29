@@ -1,15 +1,19 @@
-import { Cards, Layout } from "@/components";
-import { EventsBanner } from "@/components";
-import image from '../../assets/images/card.png'
+import { Cards, EventMainComponent, Layout } from "@/components";
+import { EventsBanner,  } from "@/components";
+import image from "../../assets/images/card.png";
 import React from "react";
 
-const WelcomePage = () => {
+
+const Events = () => {
+
   return (
     <Layout>
-      <EventsBanner />
-      <Cards image={image} title={'Cliqkets'} details={'This is just a placeholder fir the data that will be fetched from the backend that was built by our able engineers. This code will not make it to production.'} />
+      <div className="max-w-[1200px] flex flex-col items-center text-white">
+        <EventsBanner />
+        <EventMainComponent />
+      </div>
     </Layout>
   );
 };
 
-export default WelcomePage;
+export default Events;

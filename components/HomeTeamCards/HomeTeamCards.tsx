@@ -1,9 +1,12 @@
-import { MemberCard } from "..";
+import { Cards, Icons, MemberCard } from "..";
 import { useGetMembersData } from "@/query";
-import Layout from "../admin/Layout";
 import { useState } from "react";
 import { filteredData } from "@/utils";
-export default function TeamMembers() {
+import Link from "next/link";
+import Layout from "../admin/Layout";
+import { IconType } from "@/types/icontypes/icon.type";
+
+const HomeTeamCards = () => {
   const [roleData, setRoleData] = useState<any[]>([]);
   const [designerRoleData, setDesignerRoleData] = useState<any[]>([]);
   const [isDesigner, setIsDesigner] = useState<boolean>(true);
@@ -14,28 +17,24 @@ export default function TeamMembers() {
       filteredData(data?.data?.data, "designer", "department")
     );
   };
-  console.log("Desinger role data: ", { designerRoleData });
-  const onError = (error: any) => {
-    console.log("Perform sid effect after error fecthing :", error);
-  };
-  const { isLoading, isError, data, error, isFetching, refetch } =
-    useGetMembersData(onSuccess, onError) as any;
+
+  const onError = (error: any) => {};
+  const { isLoading, isError, data, error } = useGetMembersData(
+    onSuccess,
+    onError
+  ) as any;
   if (isLoading) {
     return (
-      <Layout>
-        <div className="mt-32 text-white">
-          <h2>Teams loading.....</h2>
-        </div>
-      </Layout>
+      <div className=" text-white">
+        <h2>Teams loading.....</h2>
+      </div>
     );
   }
   if (isError) {
     return (
-      <Layout>
-        <div className="mt-32 text-white">
-          <h2>{error?.message}</h2>
-        </div>
-      </Layout>
+      <div className=" text-white">
+        <h2>{error?.message}</h2>
+      </div>
     );
   }
   return (
@@ -63,7 +62,7 @@ export default function TeamMembers() {
             </section>
           </label>
         </div>
-        ​
+
         <div>
           <input type="radio" name="btn" id="btn_2" className="sr-only peer" />
           <label
@@ -81,10 +80,10 @@ export default function TeamMembers() {
           </label>
         </div>
       </section>
-      ​
+
       <section className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
         {isDesigner
-          ? designerRoleData.map((member: any, i: number) => (
+          ? designerRoleData.slice(0, 3).map((member: any, i: number) => (
               <MemberCard
                 key={i}
                 glance={{
@@ -95,7 +94,7 @@ export default function TeamMembers() {
                 }}
               />
             ))
-          : roleData.map((member: any, i: number) => (
+          : roleData.slice(0, 3).map((member: any, i: number) => (
               <MemberCard
                 key={i}
                 glance={{
@@ -107,6 +106,27 @@ export default function TeamMembers() {
               />
             ))}
       </section>
+      <div className="mt-5">
+      <Link
+        href={"/events"}
+        onClick={() => {
+          if (typeof window !== "undefined") {
+            localStorage.setItem("@title", "Projects");
+          }
+        }}
+        className="flex items-center gap-1.5 w-fit text-rose-500 text-xl font-normal cursor-pointer"
+      >
+        See All
+        <div className="hover:translate-x-3 transition-transform duration-500">
+          <Icons
+            icon={IconType.ARROW_RIGHT}
+            className="text-rose-500 cursor-pointer"
+          />
+        </div>
+      </Link>
+    </div>
     </div>
   );
-}
+};
+
+export default HomeTeamCards;

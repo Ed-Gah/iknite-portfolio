@@ -1,12 +1,17 @@
-import { Layout, ProjectsBanner } from "@/components";
+import { Cards, Layout, ProjectMainComponent, ProjectsBanner } from "@/components";
 import React from "react";
 
-const WelcomePage = () => {
+
+const Projects = () => {
+  
   return (
     <Layout>
-      <ProjectsBanner />
+      <div className="max-w-[1200px] flex flex-col items-center text-white">
+        <ProjectsBanner />
+        <ProjectMainComponent />
+      </div>
     </Layout>
   );
 };
 
-export default WelcomePage;
+export default Projects;

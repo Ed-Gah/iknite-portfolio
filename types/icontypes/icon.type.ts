@@ -46,6 +46,7 @@ export enum IconType {
   FAQ = "faq",
   SUPPORT = "support",
   ARROW_LEFT = "arrow_left",
+  ARROW_RIGHT= "arrow_right",
   USER_AVATAR = "user_avatar",
   USERS = "users",
   ARROW_DOWN = "arrow_down",
@@ -64,4 +65,5 @@ export enum IconType {
   GITHUB = "github",
   LINKEDIN = "linkedin",
   BEHANCE ="behance",
+  DRIBBBLE = "dribbble",
 }
