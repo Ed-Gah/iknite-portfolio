@@ -21,7 +21,7 @@ import {
   HiOutlinePresentationChartLine,
 } from "react-icons/hi";
 import { HiXMark } from "react-icons/hi2";
-import { BiLogoFacebookCircle } from "react-icons/bi";
+import { BiLogoFacebookCircle, BiLogoDribbble } from "react-icons/bi";
 import { AiOutlineTwitter, AiOutlineGithub, AiOutlineBehanceSquare } from "react-icons/ai";
 import { RiInstagramFill, RiLinkedinBoxFill } from "react-icons/ri";
 
@@ -127,9 +127,14 @@ const Icons: FC<Props> = ({
   if (icon === IconType.BEHANCE) {
     Icon = AiOutlineBehanceSquare;
   }
+  if (icon === IconType.DRIBBBLE) {
+    Icon = BiLogoDribbble;
+  }
   if (icon === IconType.INSTAGRAM) {
     Icon = RiInstagramFill;
   }
+
+  
   return (
     <Icon
       // color={color}
