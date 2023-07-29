@@ -12,7 +12,7 @@ type Props = {
  */
 const Cards = ({ image, title, details }: Props) => {
   return (
-    <div className="max-w-lg bg-white overflow-hidden rounded-[16px] shadow dark:bg-gray-800 dark:border-gray-700">
+    <div className="max-w-[566px] bg-white overflow-hidden rounded-[16px] shadow dark:bg-gray-800 dark:border-gray-700">
       <a href="#">
         <Image className="rounded-t-lg" src={image} alt="" />
       </a>
