@@ -4,7 +4,7 @@ import arrow_right from "../../assets/images/arrow_right.svg";
 
 const LookAtOurProjects = () => {
   return (
-    <div className="w-full my-5 items-end justify-between h-36 flex flex-wrap flex-row ">
+    <div className="w-full my-5 mb-[10px] items-end justify-between h-36 flex flex-wrap flex-row ">
       <div className="text-[25px] sm:text-[40px] lg:text-[56px]">
         <span className="text-white font-bold ">
           Look at our

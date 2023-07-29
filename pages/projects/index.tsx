@@ -37,7 +37,7 @@ const Projects = () => {
   }
   return (
     <Layout>
-      <div className="max-w-[1200px] flex flex-col mt-32  text-white">
+      <div className="max-w-[1200px] flex flex-col items-center text-white">
         <ProjectsBanner />
         <section className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-10">
           {data?.data?.data.map((data: any, i: number) => {

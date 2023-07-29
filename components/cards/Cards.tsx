@@ -5,7 +5,7 @@ type Props = {
   image: StaticImageData;
   title: string;
   details: string;
-  id: string;
+  id?: string;
 };
 /**
  * This function component expects three props
