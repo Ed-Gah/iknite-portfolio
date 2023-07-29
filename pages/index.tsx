@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import WelcomePage from "./welcome";
+import WelcomePage from "./home";
 import axios from "axios";
 
 export default function Home() {
@@ -12,8 +12,11 @@ export default function Home() {
     getEvent();
   }, []);
   return (
-    <main className={""}>
+    <main className="">
       <WelcomePage />
+      <h3 className="bg-red-500 text-right p-7">
+        yam
+      </h3>
     </main>
   );
 }

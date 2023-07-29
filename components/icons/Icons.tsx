@@ -1,33 +1,3 @@
-import { BiSolidPencil } from "react-icons/bi";
-import {
-  FaChevronCircleDown,
-  FaChevronCircleUp,
-  FaBell,
-  FaEyeSlash,
-  FaCheckCircle,
-  FaCalendarCheck,
-  FaWindowClose,
-  FaHandsHelping,
-  FaMailchimp,
-  FaMinus,
-  FaHouseUser,
-  FaPhone,
-  FaTrash,
-  FaUpload,
-  FaBlog,
-  FaGoogle,
-  FaApple,
-  FaBuilding,
-  FaFilter,
-  FaArrowLeft,
-  FaUser,
-  FaUsers,
-} from "react-icons/fa";
-import {
-  BsThreeDotsVertical,
-  BsPlus,
-  BsFillArrowUpRightSquareFill,
-} from "react-icons/bs";
 import { IconType } from "@/types/icontypes/icon.type";
 import { FC } from "react";
 import {
@@ -47,9 +17,13 @@ import {
   HiOutlineClipboardList,
   HiOutlineCog,
   HiOutlineCube,
+  HiMenu,
   HiOutlinePresentationChartLine,
 } from "react-icons/hi";
 import { HiXMark } from "react-icons/hi2";
+import { BiLogoFacebookCircle } from "react-icons/bi";
+import { AiOutlineTwitter, AiOutlineGithub, AiOutlineBehanceSquare } from "react-icons/ai";
+import { RiInstagramFill, RiLinkedinBoxFill } from "react-icons/ri";
 
 interface Props {
   className?: any;
@@ -67,17 +41,13 @@ const Icons: FC<Props> = ({
   className,
   id,
 }) => {
-  let Icon = FaChevronCircleDown;
-
-  if (icon === IconType.ADD) {
-    Icon = BsPlus;
-  }
+  let Icon = HiOutlineEye;
 
   if (icon === IconType.CHEVRON_DOWN_CIRCLE) {
     Icon;
   }
-  if (icon === IconType.CHEVRON_UP_CIRCLE) {
-    Icon = FaChevronCircleUp;
+  if (icon === IconType.MENU) {
+    Icon = HiMenu;
   }
 
   if (icon === IconType.CHEVRON_LEFT) {
@@ -100,38 +70,6 @@ const Icons: FC<Props> = ({
     Icon = HiOutlineEye;
   }
 
-  if (icon === IconType.HELP) {
-    Icon = FaHandsHelping;
-  }
-
-  if (icon === IconType.MAIL) {
-    Icon = FaMailchimp;
-  }
-
-  if (icon === IconType.MINUS) {
-    Icon = FaMinus;
-  }
-
-  if (icon === IconType.OFFICE) {
-    Icon = FaHouseUser;
-  }
-
-  if (icon === IconType.PENCIL) {
-    Icon = BiSolidPencil;
-  }
-
-  if (icon === IconType.PHONE) {
-    Icon = FaPhone;
-  }
-
-  if (icon === IconType.PHONE_MSG) {
-    Icon = FaMailchimp;
-  }
-
-  if (icon === IconType.TRASH) {
-    Icon = FaTrash;
-  }
-
   if (icon === IconType.PLUS) {
     Icon = HiOutlinePlus;
   }
@@ -140,76 +78,12 @@ const Icons: FC<Props> = ({
     Icon = HiPlus;
   }
 
-  if (icon === IconType.RELOAD) {
-    Icon = FaUpload;
-  }
-
-  if (icon === IconType.LOGO) {
-    Icon = FaBlog;
-  }
-
-  if (icon === IconType.GOOGLE) {
-    Icon = FaGoogle;
-  }
-
-  if (icon === IconType.APPLE) {
-    Icon = FaApple;
-  }
-
-  if (icon === IconType.CHECK) {
-    Icon = FaCheckCircle;
-  }
-
-  if (icon === IconType.CANCEL) {
-    Icon = FaWindowClose;
-  }
-
-  if (icon === IconType.BUILDING) {
-    Icon = FaBuilding;
-  }
-
   if (icon === IconType.SEARCH) {
     Icon = HiOutlineSearch;
   }
 
-  if (icon === IconType.EYE_SLASH) {
-    Icon = FaEyeSlash;
-  }
-
   if (icon === IconType.PLUS_SQUARE) {
     Icon = HiOutlineEyeOff;
-  }
-
-  if (icon === IconType.CALENDER) {
-    Icon = FaCalendarCheck;
-  }
-
-  if (icon === IconType.ARROW_SQUARE_RIGHT) {
-    Icon = BsFillArrowUpRightSquareFill;
-  }
-
-  if (icon === IconType.MENU) {
-    Icon = BsThreeDotsVertical;
-  }
-
-  if (icon === IconType.NOTIFICATION_BELL) {
-    Icon = FaBell;
-  }
-
-  if (icon === IconType.FILTER) {
-    Icon = FaFilter;
-  }
-
-  if (icon === IconType.ARROW_LEFT) {
-    Icon = FaArrowLeft;
-  }
-
-  if (icon === IconType.USER_AVATAR) {
-    Icon = FaUser;
-  }
-
-  if (icon === IconType.USERS) {
-    Icon = FaUsers;
   }
   if (icon === IconType.ARROW_DOWN) {
     Icon = HiArrowNarrowDown;
@@ -237,6 +111,24 @@ const Icons: FC<Props> = ({
   }
   if (icon === IconType.LIBARY) {
     Icon = HiOutlinePresentationChartLine;
+  }
+  if (icon === IconType.FACEBOOK) {
+    Icon = BiLogoFacebookCircle;
+  }
+  if (icon === IconType.TWITTER) {
+    Icon = AiOutlineTwitter;
+  }
+  if (icon === IconType.GITHUB) {
+    Icon = AiOutlineGithub;
+  }
+  if (icon === IconType.LINKEDIN) {
+    Icon = RiLinkedinBoxFill;
+  }
+  if (icon === IconType.BEHANCE) {
+    Icon = AiOutlineBehanceSquare;
+  }
+  if (icon === IconType.INSTAGRAM) {
+    Icon = RiInstagramFill;
   }
   return (
     <Icon

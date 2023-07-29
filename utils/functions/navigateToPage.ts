@@ -1,9 +1,12 @@
-import { SideBarItem } from "../constants/default.sidbar-item";
-export const navigateToPage = (e: any, item: SideBarItem, router: any) => {
+import { NavItem } from "../constant/navItem";
+
+export const navigateToPage = (e: any, item: NavItem, router: any) => {
   e.preventDefault();
   if (typeof window !== "undefined") {
     localStorage.setItem("@active", item.href) as any;
-    localStorage.setItem("@title", item.label) as any;
+    localStorage.setItem("@title", item.name) as any;
   }
-  router.push(item.href);
+  item.name === "About"
+    ? router.push("https://iknite.space")
+    : router.push(item.href);
 };
