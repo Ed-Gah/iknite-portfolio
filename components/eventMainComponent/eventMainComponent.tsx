@@ -70,7 +70,7 @@ export default function EventMainComponent() {
         </div>
       </section>
 
-        <section className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-10">
+        <section className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-[56px]">
             {data?.data?.data.map((event: any, i: number) => {
             return (
                 <Cards

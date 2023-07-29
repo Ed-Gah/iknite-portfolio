@@ -29,7 +29,7 @@ const HomeProjects = () => {
   return (
 
     <div className="flex flex-col">
-      <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 mt-[80px] gap-5">
+      <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 mt-[80px] gap-[56px]">
         {data?.data?.data.slice(0, 2).map((event: any, i: number) => {
           return (
             <Cards
