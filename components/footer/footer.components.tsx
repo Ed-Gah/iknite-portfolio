@@ -21,7 +21,7 @@ const Footer = () => {
     }
   }, []);
   return (
-    <div className=" border-t border-white w-full">
+    <div className=" border-t px-8 border-white">
       <div className="flex justify-between items-center w-full">
         <Image src={logo} height={100} width={100} alt="Logo" />
         <ul className=" flex gap-6">
