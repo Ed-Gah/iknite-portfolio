@@ -3,6 +3,7 @@ import { FC } from "react";
 import {
   HiArrowNarrowDown,
   HiArrowNarrowUp,
+  HiArrowNarrowRight,
   HiDotsHorizontal,
   HiOutlineChevronDown,
   HiOutlineChevronLeft,
@@ -24,6 +25,7 @@ import { HiXMark } from "react-icons/hi2";
 import { BiLogoFacebookCircle, BiLogoDribbble } from "react-icons/bi";
 import { AiOutlineTwitter, AiOutlineGithub, AiOutlineBehanceSquare } from "react-icons/ai";
 import { RiInstagramFill, RiLinkedinBoxFill } from "react-icons/ri";
+import { BsArrowRight } from "react-icons/bs";
 
 interface Props {
   className?: any;
@@ -90,6 +92,9 @@ const Icons: FC<Props> = ({
   }
   if (icon === IconType.ARROW_UP) {
     Icon = HiArrowNarrowUp;
+  }
+  if (icon === IconType.ARROW_RIGHT) {
+    Icon = HiArrowNarrowRight;
   }
   if (icon === IconType.EDIT) {
     Icon = HiOutlinePencilAlt;
