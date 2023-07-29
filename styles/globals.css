@@ -1,3 +1,35 @@
+/* Mulish fonts */
+@import url("https://fonts.cdnfonts.com/css/Poppins");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* CSS root variables */
+
+/* Scroll bar styles */
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  /* background: var(--neutral-10); */
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  /* background: var(--gray-500); */
+  border-radius: 5px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  /* background: var(--gray-700); */
+}
+/* Base utilities */
+@layer base {
+  body {
+    font-family: Poppins, system-ui, sans-serif;
+  }
+}
+/* Utility classes */
+@layer components {
+}

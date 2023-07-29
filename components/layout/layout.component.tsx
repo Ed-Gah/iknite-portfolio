@@ -2,6 +2,7 @@
 import React, { FC, Fragment } from "react";
 
 import { useRouter } from "next/navigation";
+import { Navbar, Footer } from "..";
 
 interface Props {
   children: any;
@@ -12,16 +13,21 @@ const Layout: FC<Props> = ({ children, crumbs }) => {
   const router = useRouter();
 
   return (
-    <section className=" flex bg-[var(--neutral-1)] w-full h-full">
+    <section className=" flex bg-[#161513] w-screen min-h-screen">
       <Fragment>
         {/* Header here */}
-        <header className=" fixed top-0 z-[55] h-[88px]  w-full border-b border-[red] bg-[red] p-6">
-          <nav>cc</nav>
+        <header className="bg-[#161513] fixed top-0 z-[55] w-full">
+          <Navbar />
         </header>
-        {/* Footer here */}
-        <footer className=" fixed bottom-0 z-[55] h-[200px]  w-full border-b border-[var(--secondary-800)] bg-[green] p-6"></footer>
+        <div>
+          {/* Section */}
+          <section className="px-28 flex flex-col items-center">{children}</section>
+          {/* Footer here */}
+          <footer className=" bg-[#161513] h-[200px] w-screen pt-6 pb-14 px-16">
+            <Footer />
+          </footer>
+        </div>
       </Fragment>
-      <section className=" mt-32 px-6">{children}</section>
     </section>
   );
 };

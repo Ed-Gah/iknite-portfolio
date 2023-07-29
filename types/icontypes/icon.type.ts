@@ -58,4 +58,10 @@ export enum IconType {
   SETTINGS = "settings",
   ENCYCLOPEDIA = "encyclopedia",
   LIBARY = "library",
+  FACEBOOK = "facebook",
+  TWITTER = "twitter",
+  INSTAGRAM = "instagram",
+  GITHUB = "github",
+  LINKEDIN = "linkedin",
+  BEHANCE ="behance",
 }
