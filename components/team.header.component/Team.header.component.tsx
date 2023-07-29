@@ -1,15 +1,17 @@
-
-
-
-export default function TeamHeader(){
-
-
-    return (
-        <section className="flex flex-col items-center justify-center">
-            <h1 className="text-xl sm:text-4xl font-bold mb-4">Meet Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#B16CEA] via-[#FF5E69] to-[#FF8A56]">Team.</span></h1>
-            <p className="w-full sm:w-[70%] text-sm sm:text-[1rem] mx-auto text-center leading-7">
-                To be the company your customers want you to be, it takes an electric group of passionate individuals
-            </p>
-        </section>
-    )
+export default function TeamHeader() {
+  return (
+    <div className="lg:w-[1000px] pt-[60px] flex flex-col gap-4">
+      <div className="lg:text-[54px] text-center text-[25px] sm:text-[40px] text-white font-[700]">
+        Meet Our
+        <span className=" text-transparent bg-clip-text bg-gradient-to-r from-haiti-300 to-pink-800">
+          {" "}
+          Team
+        </span>
+      </div>
+      <div className="text-center text-[#FFF] md:text-[14px] text-[13px]">
+        To be the company your customers want you to be, it takes an electric<br/>
+        group of passionate individuals
+      </div>
+    </div>
+  );
 }
