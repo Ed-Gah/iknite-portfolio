@@ -7,6 +7,9 @@ import { filteredData } from "@/utils";
 export default function TeamMembers() {
   const [roleData, setRoleData] = useState<any[]>([]);
   const [designerRoleData, setDesignerRoleData] = useState<any[]>([]);
+  const [isDesigner, setIsDesigner] = useState<boolean>(true);
+
+
   const onSuccess = (data: any) => {
     console.log({ data });
     setRoleData(filteredData(data?.data?.data, "developer", "department"));
@@ -58,7 +61,7 @@ export default function TeamMembers() {
             htmlFor="btn_1"
             className="peer-checked:[&>section]:bg-clip-border peer-checked:[&>section]:bg-gradient-to-r peer-checked:[&>section]:from-[#B16CEA] peer-checked:[&>section]:via-[#FF5E69] peer-checked:[&>section]:to-[#FFA84B]"
           >
-            <section className="border-2 border-transparent cursor-pointer rounded-full overflow-hidden">
+            <section className="border-2 border-transparent cursor-pointer rounded-full overflow-hidden"  onClick={()=>setIsDesigner(true)}>
               <div className="bg-[#161513] px-6 py-2 w-full flex items-center justify-center">
                 <h2 className="text-sm text-white">Designer</h2>
               </div>
@@ -72,7 +75,7 @@ export default function TeamMembers() {
             htmlFor="btn_2"
             className="peer-checked:[&>section]:bg-clip-border peer-checked:[&>section]:bg-gradient-to-r peer-checked:[&>section]:from-[#B16CEA] peer-checked:[&>section]:via-[#FF5E69] peer-checked:[&>section]:to-[#FFA84B]"
           >
-            <section className="border-2 border-transparent cursor-pointer rounded-full overflow-hidden">
+            <section className="border-2 border-transparent cursor-pointer rounded-full overflow-hidden" onClick={()=>setIsDesigner(false)}>
               <div className="bg-[#161513] px-6 py-2 w-full flex items-center justify-center">
                 <h2 className="text-sm text-white">Developer</h2>
               </div>
@@ -82,17 +85,36 @@ export default function TeamMembers() {
       </section>
 
       <section className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-        {data?.data?.data.map((member: any, i: number) => (
-          <MemberCard
-            key={i}
-            glance={{
-              name: member.name || "Member name",
-              image: `/${member.image}` || "",
-              role: member.department || "member role",
-              socialMedia: member.socialMedia || undefined,
-            }}
-          />
-        ))}
+      {
+        isDesigner? 
+        (
+          designerRoleData.map((member: any, i: number) => (
+            <MemberCard
+              key={i}
+              glance={{
+                name: member.name || "Member name",
+                image: `/${member.image}` || "",
+                role: member.department || "member role",
+                socialHandles: member.socialHandles || undefined,
+              }}
+            />
+          ))
+        )
+          :
+          (
+          roleData.map((member: any, i: number) => (
+            <MemberCard
+              key={i}
+              glance={{
+                name: member.name || "Member name",
+                image: `/${member.image}` || "",
+                role: member.department || "member role",
+                socialHandles: member.socialHandles || undefined,
+              }}
+            />
+          ))
+          )
+      }
       </section>
     </div>
   );
