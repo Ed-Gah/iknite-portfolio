@@ -9,6 +9,7 @@ const eventSchema = new Schema(
             unique: true,
         },
         description: String,
+        coverImage: String,
         date: Date,
         type: {
             type: String,
