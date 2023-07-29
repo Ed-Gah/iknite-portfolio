@@ -75,7 +75,7 @@ export default function MemberCard({glance}:Team) {
                         }
                         {
                             glance.socialHandles?.behance &&
-                            <div className="w-10 h-10 border border-slate-900">
+                            <div className="w-7 h-7 border border-slate-900 flex items-center justify-center rounded-full">
                                 <a href={glance.socialHandles?.behance} target="_blank" rel="noreferrer" className="text-neutral-900 hover:text-neutral-800">
                                     <Icons
                                         icon={IconType.BEHANCE}
