@@ -3,6 +3,7 @@ import { useGetMembersData } from "@/query";
 import { useState } from "react";
 import { filteredData } from "@/utils";
 import Link from "next/link";
+import Layout from "../admin/Layout";
 
 const HomeTeamCards = () => {
   const [roleData, setRoleData] = useState<any[]>([]);
@@ -21,6 +22,20 @@ const HomeTeamCards = () => {
     onSuccess,
     onError
   ) as any;
+  if (isLoading) {
+    return (
+      <div className=" text-white">
+        <h2>Teams loading.....</h2>
+      </div>
+    );
+  }
+  if (isError) {
+    return (
+      <div className=" text-white">
+        <h2>{error?.message}</h2>
+      </div>
+    );
+  }
   return (
     <div className="mt-10">
       <section className="w-full flex justify-center gap-5 mb-16">

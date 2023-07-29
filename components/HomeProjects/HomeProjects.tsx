@@ -11,7 +11,20 @@ const HomeProjects = () => {
     onSuccess,
     onError
   ) as any;
-
+  if (isLoading) {
+    return (
+      <div className=" text-white">
+        <h2>Project loading.....</h2>
+      </div>
+    );
+  }
+  if (isError) {
+    return (
+      <div className=" text-white">
+        <h2>{error?.message}</h2>
+      </div>
+    );
+  }
   return (
     <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 mt-[80px] gap-5">
       {data?.data?.data.slice(0, 3).map((event: any, i: number) => {
