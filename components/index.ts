@@ -9,6 +9,7 @@ import EventsBanner from "./eventBanner/EventsBanner";
 import EventMainComponent from "./eventMainComponent/eventMainComponent";
 import ProjectCard from "./ProjectCard/ProjectCard";
 import ProjectsBanner from "./ProjectsBanner/ProjectsBanner";
+import ProjectMainComponent from "./projectMainComponent/ProjectMainComponent";
 import Cards from "./cards/Cards";
 
 import Footer from "./footer/footer.components";
@@ -26,5 +27,6 @@ export {
     EventMainComponent, 
     ProjectCard, 
     ProjectsBanner, 
+    ProjectMainComponent, 
     Footer 
 };
