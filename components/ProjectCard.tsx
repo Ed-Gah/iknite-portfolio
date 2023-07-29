@@ -9,7 +9,7 @@ interface ProjectCardProps {
   link: string;
 }
 
-const ProjectCard = ({ project}: { project: ProjectCardProps }) => {
+const ProjectCard = ({ project }: { project: ProjectCardProps }) => {
   const router = useRouter();
 
   return (

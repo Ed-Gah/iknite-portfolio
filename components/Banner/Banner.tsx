@@ -1,4 +1,4 @@
-export const Banner = () => {
+const Banner = () => {
   return (
     <div className="lg:w-[1000px] mt-[100px] py-[126px] flex flex-col gap-4">
       <div className="lg:text-[54px] text-center text-[25px] sm:text-[40px] text-white font-[700]">
@@ -15,3 +15,6 @@ export const Banner = () => {
     </div>
   );
 };
+
+
+export default Banner;

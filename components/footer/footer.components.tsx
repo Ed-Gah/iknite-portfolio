@@ -1,22 +1,46 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../../assets/images/logo.png";
 import Image from "next/image";
-import { footerItems } from "@/utils";
+import { footerItems, navigateToPage } from "@/utils";
 import { NavItem } from "@/utils/constant/navItem";
 import Link from "next/link";
 import { Icons } from "..";
 import { IconType } from "@/types/icontypes/icon.type";
+import { useRouter } from "next/router";
 
 const Footer = () => {
+  const router = useRouter();
+  const [hover, setHover] = useState<boolean>(false);
+  const [hoverIndex, setHoverIndex] = useState(null) as any;
+  const [activeTitle, setActiveTitle] = useState<string>("Home");
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const query: any = localStorage.getItem("@title");
+      setActiveTitle(query);
+    }
+  }, []);
   return (
-    <div className="max-w-[1200px] mx-auto border-t border-white">
-      <div className="flex justify-between items-center">
+    <div className=" border-t border-white w-full">
+      <div className="flex justify-between items-center w-full">
         <Image src={logo} height={100} width={100} alt="Logo" />
         <ul className=" flex gap-6">
-          {footerItems.map((footerItem: NavItem) => {
+          {footerItems.map((footerItem: NavItem, i: number) => {
             return (
-              <li className=" text-white cursor-pointer">
-                <Link href={footerItem.href}>{footerItem.name}</Link>
+              <li
+                className={"animated text-white cursor-pointer"}
+                onClick={(e) => navigateToPage(e, footerItem, router)}
+                key={i}
+              >
+                {footerItem.name === "About" ? (
+                  <Link href={"https://iknite.space"} className="px-2 py-1">
+                    {footerItem.name}
+                  </Link>
+                ) : (
+                  <Link href={footerItem.href} className="px-2 py-1">
+                    {footerItem.name}
+                  </Link>
+                )}
               </li>
             );
           })}
