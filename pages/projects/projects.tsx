@@ -1,22 +1,41 @@
 import ProjectCard from "@/components/ProjectCard";
 import React from "react";
+import Link from "next/link";
 
 const projects = () => {
+  //TODO: actual project array should replace this
   let projectArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   return (
-    <div className="flex flex-col text-haiti-50 p-16 space-y-8">
-      <div className="flex flex-col items-center justify-center text-center space-y-4">
-        <h1 className="font-black text-3xl md:text-4xl lg:text-5xl">Take a look at our projects</h1>
-        <p className="text-normal max-w-[50vw]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamt.</p>
+    <div className="bg-[#161513] flex flex-col text-haiti-50 p-16 w-full mt-12 space-y-8">
+      <div className="flex flex-col items-center justify-center text-center space-y-8 py-10">
+        <h1 className="font-black text-3xl md:text-4xl lg:text-5xl">
+          Take a look at our{" "}
+          <span className="bg-gradient-to-r from-[#B16CEA] via-[#FF5E69] to-[#FFA84B] bg-clip-text text-transparent">
+            projects
+          </span>
+        </h1>
+        <p className="text-normal max-w-[50vw]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniamt.
+        </p>
         <div className="flex flex-row items-center justify-center space-x-4 font-bold">
-            <div className="border border-1 overflow-hidden p-[1px] rounded-3xl bg-gradient-to-r from-[#B16CEA] via-[#FF5E69] to-[#FFA84B]">
-              <div className="bg-[#161513] w-full h-full px-4 py-2 rounded-3xl">Featured</div></div>
-          <div className="px-4 py-2">Ongoing</div>
-          <div className="px-4 py-2">Sneak</div>
+          <div className="border border-1 overflow-hidden p-[1px] rounded-3xl bg-gradient-to-r from-[#B16CEA] via-[#FF5E69] to-[#FFA84B]">
+            <Link href="#" className="bg-[#161513] w-full h-full px-4 py-2 rounded-3xl">
+              Featured
+            </Link>
+          </div>
+          <Link href="#" className="px-4 py-2">
+            Ongoing
+          </Link>
+          <Link href="#" className="px-4 py-2">
+            Sneak
+          </Link>
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:max-w-[90%] items-center gap-12">
         {projectArr.map((project) => (
+          // TODO: use the actual project properties on the projectCard
           <ProjectCard
             project={{
               image:
@@ -29,6 +48,7 @@ const projects = () => {
           />
         ))}
       </div>
+      {/* TODO: project pagination to to done here */}
     </div>
   );
 };

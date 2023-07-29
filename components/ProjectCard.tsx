@@ -9,12 +9,12 @@ interface ProjectCardProps {
   link: string;
 }
 
-const ProjectCard = ({ project }: { project: ProjectCardProps }) => {
+const ProjectCard = ({ project}: { project: ProjectCardProps }) => {
   const router = useRouter();
 
   return (
     <div
-      className="flex flex-col rounded-xl overflow-hidden min-w-[200px] min-h-[200px] w-full"
+      className="flex flex-col rounded-xl overflow-hidden min-w-[200px] min-h-[200px] w-full md:max-w-[30vw]"
       onClick={() => router.push(project.link)}
     >
       <div className="flex-2 bg-haiti-50 flex items-center justify-center">
