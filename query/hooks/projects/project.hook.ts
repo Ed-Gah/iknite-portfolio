@@ -2,12 +2,12 @@ import { request } from "@/utils/functions/axios-utils";
 import { useQuery } from "@tanstack/react-query";
 
 /** Fetch all Documents */
-const fetchDocuments = () =>
+const fetchProjects = () =>
   request({
-    url: `/projects`,
+    url: `/project/get-all`,
   });
 
 /** Get all documents custome useQuery */
-export const useGetProjectssData = (onSuccess: any, onError: any) => {
-  return useQuery(["projects"], fetchDocuments, { onSuccess, onError });
+export const useGetProjectsData = (onSuccess: any, onError: any) => {
+  return useQuery(["project"], fetchProjects, { onSuccess, onError });
 };

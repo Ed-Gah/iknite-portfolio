@@ -1,6 +1,9 @@
 import mongoose from "mongoose";
 import catchAsync from "./catchAsync";
 import DB from "./db";
+import Member from '../models/Member';
+import Contributor from '../models/Contributor'
+import Project from "../models/Project";
 
 
 export const deleteOne = (Model) =>
@@ -55,7 +58,9 @@ export const getOne = (Model, populateOptions, selectOptions) =>
         await DB()
         let query = Model.findById(id);
 
-        if (populateOptions) query = query.populate(populateOptions);
+        if (populateOptions) {
+            populateOptions.forEach(populateOption => query = query.populate(populateOption))
+        };
         if (selectOptions) query = query.select(selectOptions);
 
         const doc = await query;

@@ -1,3 +1,7 @@
+import { Cards, LookAtOurProjects, MemberCard } from "..";
+import image from "../../assets/images/card.png";
+import arrow_right from "../../assets/images/arrow_right.svg";
+
 const Banner = () => {
   return (
     <div className="lg:w-[1000px] mt-[100px] py-[126px] flex flex-col gap-4">
@@ -15,6 +19,5 @@ const Banner = () => {
     </div>
   );
 };
-
 
 export default Banner;
