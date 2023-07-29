@@ -1,6 +1,5 @@
 import { Cards, EventMainComponent, Layout } from "@/components";
 import { EventsBanner } from "@/components";
-import image from "../../assets/images/card.png";
 import React from "react";
 import { useGetEventsData } from "@/query";
 
@@ -37,11 +36,13 @@ const Events = () => {
         <EventsBanner />
         <section className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-10">
           {data?.data?.data.map((event: any, i: number) => {
+            console.log(event);
+            
             return (
               <Cards
                 key={i}
                 id={event._id}
-                image={image}
+                image={event?.coverImage}
                 title={event.title}
                 details={event.description}
               />

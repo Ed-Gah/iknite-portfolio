@@ -87,7 +87,7 @@ const HomeTeamCards = () => {
                 key={i}
                 glance={{
                   name: member.name || "Member name",
-                  image: `/${member.image}` || "",
+                  image: `${member.image}` || "",
                   role: member.department || "member role",
                   socialHandles: member.socialHandles || undefined,
                 }}
@@ -98,7 +98,7 @@ const HomeTeamCards = () => {
                 key={i}
                 glance={{
                   name: member.name || "Member name",
-                  image: `/${member.image}` || "",
+                  image: `${member.image}` || "",
                   role: member.department || "member role",
                   socialHandles: member.socialHandles || undefined,
                 }}
