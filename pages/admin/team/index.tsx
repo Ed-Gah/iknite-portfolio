@@ -1,6 +1,6 @@
 import Dashboard from "@/components/admin/Dashboard";
 import Layout from "@/components/admin/Layout";
-import Members from "@/components/admin/project/ProjectList";
+import Members from "@/components/admin/team/Members";
 import React from "react";
 
 export default function index() {

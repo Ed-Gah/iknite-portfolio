@@ -9,20 +9,31 @@ export default function Members() {
       <div className="shadow-xs w-full overflow-hidden rounded-lg">
         <span className="btn-active float-right my-3 flex w-fit">
           {" "}
-          <Link href="/organizer/create">Create Event</Link>
+          <Link href="/organizer/create">Add member</Link>
         </span>
         <div className="w-full overflow-x-auto">
           <table className="whitespace-no-wrap w-full">
             _
             <tr className="border-b bg-gray-50 text-left text-xs font-semibold uppercase tracking-wide text-gray-500 dark:bg-gray-800 dark:text-gray-400">
               <th className="px-4 py-3">Name</th>
-              <th className="px-4 py-3">Description</th>
+              <th className="px-4 py-3">Role</th>
               <th className="px-4 py-3">Actions</th>
             </tr>
-            <Member />
-            <Member />
-            <Member />
-            <Member />
+            <Member
+              name="Tambua Evaristus"
+              role="Admin"
+              image="https://cliqkets.com/images/eva.jpeg"
+            />
+              <Member
+              name="Tambua Evaristus"
+              role="Admin"
+              image="https://cliqkets.com/images/eva.jpeg"
+            />
+              <Member
+              name="Tambua Evaristus"
+              role="Admin"
+              image="https://cliqkets.com/images/eva.jpeg"
+            />
           </table>
         </div>
       </div>

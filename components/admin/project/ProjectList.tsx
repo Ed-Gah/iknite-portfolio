@@ -3,12 +3,7 @@ import ProjetItem from "./ProjectItem";
 import Link from "next/link";
 import ProjectItem from "./ProjectItem";
 
-interface Props {
-  title: string;
-  description: string;
-  image: string;
-}
-export default function Members() {
+export default function ProjectList() {
   return (
     <div>
       <div className="shadow-xs w-full overflow-hidden rounded-lg">
