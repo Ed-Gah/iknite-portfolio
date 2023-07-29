@@ -13,15 +13,15 @@ const Layout: FC<Props> = ({ children, crumbs }) => {
   const router = useRouter();
 
   return (
-    <section className=" flex bg-[#161513] w-screen h-screen">
+    <section className=" flex bg-[#161513] w-screen min-h-screen">
       <Fragment>
         {/* Header here */}
-        <header className=" fixed top-0 z-[55] w-full">
+        <header className="bg-[#161513] fixed top-0 z-[55] w-full">
           <Navbar />
         </header>
         <div>
           {/* Section */}
-          <section className="px-28">{children}</section>
+          <section className="px-28 flex flex-col items-center">{children}</section>
           {/* Footer here */}
           <footer className=" bg-[#161513] h-[200px] w-screen pt-6 pb-14 px-16">
             <Footer />
