@@ -6,6 +6,7 @@ import MemberCard from "./memberCard/MemberCard";
 import Banner from "./Banner/Banner";
 import Navbar from "./Navbar/Navbar";
 import EventsBanner from "./eventBanner/EventsBanner";
+import EventMainComponent from "./eventMainComponent/eventMainComponent";
 import ProjectCard from "./ProjectCard/ProjectCard";
 import ProjectsBanner from "./ProjectsBanner/ProjectsBanner";
 import Cards from "./cards/Cards";
@@ -22,6 +23,7 @@ export {
     Banner, 
     Navbar, 
     EventsBanner, 
+    EventMainComponent, 
     ProjectCard, 
     ProjectsBanner, 
     Footer 
