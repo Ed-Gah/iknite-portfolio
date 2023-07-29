@@ -25,7 +25,7 @@ const createContributors = (contributors) => {
 const createProject = catchAsync(async (req, res, next) => {
     await DB();
 
-    const { contributors, title, date, status, type, projectManager, coverImage, media } = req.body
+    const { contributors, title, date, status, type, projectManager, coverImage, media, description } = req.body
 
 
     const contributorsId = await createContributors(contributors)
@@ -41,6 +41,7 @@ const createProject = catchAsync(async (req, res, next) => {
         projectManager,
         coverImage,
         media,
+        description,
     }
 
     const newProject = await Project.create(project)

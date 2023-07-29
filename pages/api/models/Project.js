@@ -28,7 +28,8 @@ const projectSchema = new Schema(
         contributors: [{
             type: Schema.ObjectId,
             ref: 'Contributor'
-        }]
+        }],
+        description: String,
     }, { timestamps: true }
 )
 

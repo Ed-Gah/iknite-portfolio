@@ -13,6 +13,7 @@ import ProjectMainComponent from "./projectMainComponent/ProjectMainComponent";
 import Cards from "./cards/Cards";
 import LookAtOurProjects from "./LookAtOurProjects/LookAtOurProjects";
 import HomeProjects from "./HomeProjects/HomeProjects";
+import HomeEvents from "./HomeEvents/HomeEvents";
 import HomeTeam from "./HomeTeam/HomeTeam";
 import Footer from "./footer/footer.components";
 import HomeTeamCards from "./HomeTeamCards/HomeTeamCards";
@@ -34,6 +35,7 @@ export {
     EventDescription,
     EventTeamMembers,
     HomeProjects,
+    HomeEvents,
     HomeTeamCards,
     HomeTeam,
     Banner, 
