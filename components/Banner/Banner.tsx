@@ -1,11 +1,8 @@
-import TeamPage from "@/pages/team";
-import { MemberCard } from "..";
-import { useState } from "react";
-import Pagination from "../pagination/Pagination";
+import { Cards, LookAtOurProjects, MemberCard } from "..";
+import image from "../../assets/images/card.png";
+import arrow_right from "../../assets/images/arrow_right.svg";
 
-
-export const Banner = () => {
-  const[glance, setGlance] = useState()
+const Banner = () => {
   return (
     <div className="lg:w-[1000px] mt-[100px] py-[126px] flex flex-col gap-4">
       <div className="lg:text-[54px] text-center text-[25px] sm:text-[40px] text-white font-[700]">
@@ -50,6 +47,5 @@ export const Banner = () => {
     </div>
   );
 };
-
 
 export default Banner;

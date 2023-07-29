@@ -4,7 +4,7 @@ import React from "react";
 const TeamPage = () => {
   return (
     <Layout>
-      <div className="flex flex-col items-center justify-center mt-24  text-white">
+      <div className="max-w-[1200px] flex flex-col mt-32  text-white">
         <TeamHeader />
         <TeamMembers />
       </div>
