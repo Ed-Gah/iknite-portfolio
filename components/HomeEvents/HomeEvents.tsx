@@ -1,14 +1,14 @@
 import { IconType } from "@/types/icontypes/icon.type";
 import { Cards, Icons, MemberCard } from "..";
 import image from "../../assets/images/card.png";
-import { useGetProjectsData } from "@/query";
+import { useGetEventsData } from "@/query";
 import Link from "next/link";
 
-const HomeProjects = () => {
+const HomeEvents = () => {
   const onSuccess = (data: any) => {};
 
   const onError = (error: any) => {};
-  const { isLoading, isError, data, error } = useGetProjectsData(
+  const { isLoading, isError, data, error } = useGetEventsData(
     onSuccess,
     onError
   ) as any;
@@ -27,7 +27,6 @@ const HomeProjects = () => {
     );
   }
   return (
-
     <div className="flex flex-col">
       <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 mt-[80px] gap-5">
         {data?.data?.data.slice(0, 2).map((event: any, i: number) => {
@@ -35,7 +34,7 @@ const HomeProjects = () => {
             <Cards
               key={i}
               id={event._id}
-              image={event.coverImage}
+              image={event?.coverImage}
               title={event.title}
               details={event.description}
             />
@@ -44,10 +43,10 @@ const HomeProjects = () => {
       </section>
       <div className="mt-5">
         <Link
-          href={"/projects"}
+          href={"/events"}
           onClick={() => {
             if (typeof window !== "undefined") {
-              localStorage.setItem("@title", "Projects");
+              localStorage.setItem("@title", "Events");
             }
           }}
           className="flex items-center gap-1.5 w-fit text-rose-500 text-xl font-normal cursor-pointer"
@@ -65,4 +64,4 @@ const HomeProjects = () => {
   );
 };
 
-export default HomeProjects;
+export default HomeEvents;

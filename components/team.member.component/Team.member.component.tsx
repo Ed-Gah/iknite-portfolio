@@ -40,7 +40,7 @@ export default function TeamMembers() {
   }
   return (
     <div className="mt-10">
-      <section className="w-full flex justify-center gap-5 mb-16">
+      <section className="w-full flex justify-center gap-8 mb-16">
         <div>
           <input
             type="radio"
@@ -58,7 +58,7 @@ export default function TeamMembers() {
               onClick={() => setIsDesigner(true)}
             >
               <div className="bg-[#161513] px-6 py-2 w-full flex items-center justify-center">
-                <h2 className="text-sm text-white">Designer</h2>
+                <h2 className="text-2xl text-white">Designer</h2>
               </div>
             </section>
           </label>
@@ -75,7 +75,7 @@ export default function TeamMembers() {
               onClick={() => setIsDesigner(false)}
             >
               <div className="bg-[#161513] px-6 py-2 w-full flex items-center justify-center">
-                <h2 className="text-sm text-white">Developer</h2>
+                <h2 className="text-2xl text-white">Developer</h2>
               </div>
             </section>
           </label>
@@ -89,7 +89,7 @@ export default function TeamMembers() {
                 key={i}
                 glance={{
                   name: member.name || "Member name",
-                  image: `/${member.image}` || "",
+                  image: `${member.image}` || "",
                   role: member.department || "member role",
                   socialHandles: member.socialHandles || undefined,
                 }}
@@ -100,7 +100,7 @@ export default function TeamMembers() {
                 key={i}
                 glance={{
                   name: member.name || "Member name",
-                  image: `/${member.image}` || "",
+                  image: `${member.image}` || "",
                   role: member.department || "member role",
                   socialHandles: member.socialHandles || undefined,
                 }}

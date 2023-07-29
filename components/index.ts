@@ -13,10 +13,17 @@ import ProjectMainComponent from "./projectMainComponent/ProjectMainComponent";
 import Cards from "./cards/Cards";
 import LookAtOurProjects from "./LookAtOurProjects/LookAtOurProjects";
 import HomeProjects from "./HomeProjects/HomeProjects";
+import HomeEvents from "./HomeEvents/HomeEvents";
 import HomeTeam from "./HomeTeam/HomeTeam";
 import Footer from "./footer/footer.components";
 import HomeTeamCards from "./HomeTeamCards/HomeTeamCards";
 import LookAtOurSpaceEvents from "./LookAtOurSpaceEvents/LookAtOurSpaceEvents";
+import EventDescription from "./EventDescription/EventDescription";
+import EventTeamMembers from "./EventTeamMembers/EventTeamMembers";
+import TeamCard from "./TeamCard/TeamCard";
+import WinningTeam from "./WinningTeam/WinningTeam";
+import UserPersonaComponent from "./ProjectDetailsComponent/UserPersonaComponent/UserPersonaComponent";
+
 export { 
     Icons, 
     Layout, 
@@ -24,8 +31,13 @@ export {
     TeamHeader, 
     LookAtOurSpaceEvents,
     TeamMembers, 
+    TeamCard,
+    WinningTeam,
     MemberCard, 
+    EventDescription,
+    EventTeamMembers,
     HomeProjects,
+    HomeEvents,
     HomeTeamCards,
     HomeTeam,
     Banner, 
@@ -36,5 +48,6 @@ export {
     LookAtOurProjects,
     ProjectsBanner, 
     ProjectMainComponent, 
+    UserPersonaComponent,
     Footer 
 };

@@ -1,9 +1,10 @@
-import { Cards, MemberCard } from "..";
+import { Cards, Icons, MemberCard } from "..";
 import { useGetMembersData } from "@/query";
 import { useState } from "react";
 import { filteredData } from "@/utils";
 import Link from "next/link";
 import Layout from "../admin/Layout";
+import { IconType } from "@/types/icontypes/icon.type";
 
 const HomeTeamCards = () => {
   const [roleData, setRoleData] = useState<any[]>([]);
@@ -87,7 +88,7 @@ const HomeTeamCards = () => {
                 key={i}
                 glance={{
                   name: member.name || "Member name",
-                  image: `/${member.image}` || "",
+                  image: `${member.image}` || "",
                   role: member.department || "member role",
                   socialHandles: member.socialHandles || undefined,
                 }}
@@ -98,13 +99,14 @@ const HomeTeamCards = () => {
                 key={i}
                 glance={{
                   name: member.name || "Member name",
-                  image: `/${member.image}` || "",
+                  image: `${member.image}` || "",
                   role: member.department || "member role",
                   socialHandles: member.socialHandles || undefined,
                 }}
               />
             ))}
       </section>
+      <div className="mt-5">
       <Link
         href={"/team"}
         onClick={() => {
@@ -112,10 +114,17 @@ const HomeTeamCards = () => {
             localStorage.setItem("@title", "Team");
           }
         }}
-        className="w-[83px] text-rose-500 text-2xl font-normal cursor-pointer"
+        className="flex items-center gap-1.5 w-fit text-rose-500 text-xl font-normal cursor-pointer"
       >
         See All
+        <div className="hover:translate-x-3 transition-transform duration-500">
+          <Icons
+            icon={IconType.ARROW_RIGHT}
+            className="text-rose-500 cursor-pointer"
+          />
+        </div>
       </Link>
+    </div>
     </div>
   );
 };
