@@ -34,7 +34,7 @@ const HomeEvents = () => {
             <Cards
               key={i}
               id={event._id}
-              image={image}
+              image={event?.coverImage}
               title={event.title}
               details={event.description}
             />
