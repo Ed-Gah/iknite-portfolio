@@ -19,7 +19,13 @@ const Cards = ({ image, title, details, id }: Props) => {
       router.push(`/events/${id}`)
     }} className="max-w-[566px] bg-white overflow-hidden rounded-[16px] shadow dark:bg-gray-800 dark:border-gray-700">
       <a href="#">
-        <img className="rounded-t-lg" src={image} width={566} height={566} alt="" />
+        <img
+          className="rounded-t-lg"
+          src={image}
+          alt={title}
+          width={566}
+          height={566}
+        />
       </a>
       <div className="p-5">
         <Link href={`/events/${id}`}>

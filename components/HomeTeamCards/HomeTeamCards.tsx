@@ -108,10 +108,10 @@ const HomeTeamCards = () => {
       </section>
       <div className="mt-5">
       <Link
-        href={"/events"}
+        href={"/team"}
         onClick={() => {
           if (typeof window !== "undefined") {
-            localStorage.setItem("@title", "Projects");
+            localStorage.setItem("@title", "Team");
           }
         }}
         className="flex items-center gap-1.5 w-fit text-rose-500 text-xl font-normal cursor-pointer"

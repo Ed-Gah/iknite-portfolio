@@ -30,37 +30,37 @@ const HomeProjects = () => {
 
     <div className="flex flex-col">
       <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 mt-[80px] gap-5">
-      {data?.data?.data.slice(0, 3).map((event: any, i: number) => {
-        return (
-          <Cards
-            key={i}
-            id={event._id}
-            image={event?.coverImage}
-            title={event.title}
-            details={event.description}
-          />
-        );
-      })}
-    </section>
-    <div className="mt-5">
-      <Link
-        href={"/events"}
-        onClick={() => {
-          if (typeof window !== "undefined") {
-            localStorage.setItem("@title", "Projects");
-          }
-        }}
-        className="flex items-center gap-1.5 w-fit text-rose-500 text-xl font-normal cursor-pointer"
-      >
-        See All
-        <div className="hover:translate-x-3 transition-transform duration-500">
-          <Icons
-            icon={IconType.ARROW_RIGHT}
-            className="text-rose-500 cursor-pointer"
-          />
-        </div>
-      </Link>
-    </div>
+        {data?.data?.data.slice(0, 2).map((event: any, i: number) => {
+          return (
+            <Cards
+              key={i}
+              id={event._id}
+              image={event.coverImage}
+              title={event.title}
+              details={event.description}
+            />
+          );
+        })}
+      </section>
+      <div className="mt-5">
+        <Link
+          href={"/projects"}
+          onClick={() => {
+            if (typeof window !== "undefined") {
+              localStorage.setItem("@title", "Projects");
+            }
+          }}
+          className="flex items-center gap-1.5 w-fit text-rose-500 text-xl font-normal cursor-pointer"
+        >
+          See All
+          <div className="hover:translate-x-3 transition-transform duration-500">
+            <Icons
+              icon={IconType.ARROW_RIGHT}
+              className="text-rose-500 cursor-pointer"
+            />
+          </div>
+        </Link>
+      </div>
     </div>
   );
 };
