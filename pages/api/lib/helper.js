@@ -26,10 +26,11 @@ export const deleteOne = (Model) =>
 
 export const updateOne = (Model, params) =>
     catchAsync(async (req, res) => {
+        const id = req?.query?.id
         await DB()
         let body = {};
         params.forEach((param) => (body[param] = req.body[param] || null));
-        const updatedDoc = await Model.findByIdAndUpdate(req.params.id, body, {
+        const updatedDoc = await Model.findByIdAndUpdate(id, body, {
             new: true,
             runValidators: true,
         });

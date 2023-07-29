@@ -6,6 +6,7 @@ import {
   HomeTeam,
   HomeTeamCards,
   LookAtOurSpaceEvents,
+  HomeEvents,
 } from "@/components";
 import React from "react";
 const WelcomePage = () => {
@@ -21,7 +22,7 @@ const WelcomePage = () => {
       <HomeTeam />
       <HomeTeamCards />
       <LookAtOurSpaceEvents />
-      <HomeProjects />
+      <HomeEvents />
     </Layout>
   );
 };
