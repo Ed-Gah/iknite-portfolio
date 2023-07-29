@@ -1,6 +1,10 @@
-import Team from "./team/Page";
+import TeamPage from "@/pages/team";
+import { MemberCard } from "..";
+import { useState } from "react";
+
 
 export const Banner = () => {
+  const[glance, setGlance] = useState()
   return (
     <div className="lg:w-[1000px] mt-[100px] py-[126px] flex flex-col gap-4">
       <div className="lg:text-[54px] text-center text-[25px] sm:text-[40px] text-white font-[700]">
@@ -32,15 +36,18 @@ export const Banner = () => {
 </div>
 <div className="grid grid-cols-12 gap-[100px]">
   <div className="col-span-4">
-    <Team />
+    <MemberCard glance={glance} />
   </div>
   <div className="col-span-4">
-    <Team />
+    <MemberCard />
   </div>
   <div className="col-span-4">
-    <Team />
+    <MemberCard />
   </div>
 </div>
     </div>
   );
 };
+
+
+export default Banner;

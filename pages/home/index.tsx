@@ -1,6 +1,6 @@
-import { Layout } from "@/components"
-import { Banner } from "@/components/Banner"
-import React from "react"
+import { Layout } from "@/components";
+import { Banner } from "@/components/Banner";
+import React from "react";
 
 const WelcomePage = () => {
   return (
