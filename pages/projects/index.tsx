@@ -7,7 +7,6 @@ const WelcomePage = () => {
    * Methods
    */
   const onSuccess = (data: any) => {
-    console.log({ data });
     // setDraftData(filteredData(data?.data, "Draft"));
     // setProgressData(filteredData(data?.data, "In Progress"));
     // setValidatedData(filteredData(data?.data, "Validated"));

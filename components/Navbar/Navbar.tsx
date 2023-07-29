@@ -25,16 +25,17 @@ export default function Navbar() {
   return (
     <div className="flex px-4 h-[88px] py-6 justify-between items-center max-w-[1200px] mx-auto ">
       <div className="flex">
-        <div onClick={()=>{
-          router.push('/')
-        }} className="pr-20 flex-shrink-0 cursor-pointer ">
+        <div
+          onClick={() => {
+            router.push("/");
+          }}
+          className="pr-20 flex-shrink-0 cursor-pointer "
+        >
           <Image src={logo} height={78} width={86} alt="..." />
         </div>
         <div className="hidden w-full flex-grow md:flex lg:w-auto items-center lg:space-x-4">
           <ul className="flex items-center text-white justify-center font-medium flex-row gap-6 text-[16px]">
             {navItems.map((navItem: NavItem, i: number) => {
-              console.log("Active title : ", activeTitle);
-              console.log("Nave item : ", navItem.name);
               return (
                 <li
                   key={i}
