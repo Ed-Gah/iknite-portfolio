@@ -1,3 +1,3 @@
-import { useGetProjectssData } from "./hooks/projects/project.hook";
+import { useGetProjectsData } from "./hooks/projects/project.hook";
 
-export { useGetProjectssData };
+export { useGetProjectsData };

@@ -16,7 +16,13 @@ const Cards = ({ image, title, details, id }: Props) => {
   return (
     <div className="max-w-lg bg-white overflow-hidden rounded-[16px] shadow dark:bg-gray-800 dark:border-gray-700">
       <Link href={`/events/${id}`}>
-        <Image className="rounded-t-lg" src={image} alt="" />
+        <Image
+          className="rounded-t-lg"
+          src={`/${image}`}
+          alt=""
+          width={100}
+          height={100}
+        />
       </Link>
       <div className="p-5">
         <Link href={`/events/${id}`}>
