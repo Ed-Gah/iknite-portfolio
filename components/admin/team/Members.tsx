@@ -6,7 +6,6 @@ import { useGetMembersData } from "@/query";
 import { filteredData } from "@/utils";
 
 export default function Members() {
-  const [roleData, setRoleData] = useState<any[]>([]);
   const [members, setMembers] = useState<any[]>([]);
   const onSuccess = (data: any) => {
     console.log({ data });
@@ -14,7 +13,7 @@ export default function Members() {
   };
 
   const onError = (error: any) => {};
-  const { isLoading, isError, data, error } = useGetMembersData(
+  const { isLoading, isError, error } = useGetMembersData(
     onSuccess,
     onError
   ) as any;

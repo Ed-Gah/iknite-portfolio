@@ -5,7 +5,6 @@ import ProjectItem from "./ProjectItem";
 import { useGetProjectsData } from "@/query";
 
 export default function ProjectList() {
-  const [roleData, setRoleData] = useState<any[]>([]);
   const [projects, setProjects] = useState<any[]>([]);
   const onSuccess = (data: any) => {
     console.log({ data });
@@ -13,7 +12,7 @@ export default function ProjectList() {
   };
 
   const onError = (error: any) => {};
-  const { isLoading, isError, data, error } = useGetProjectsData(
+  const { isLoading, isError, error } = useGetProjectsData(
     onSuccess,
     onError
   ) as any;
