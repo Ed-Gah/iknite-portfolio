@@ -1,6 +1,4 @@
-import { Cards, Layout } from "@/components";
-import { EventsBanner } from "@/components";
-import image from "../../../assets/images/card.png";
+import { Layout } from "@/components";
 import React from "react";
 import { useRouter } from "next/router";
 
