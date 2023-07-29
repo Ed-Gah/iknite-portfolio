@@ -1,8 +1,18 @@
-import { Layout, Banner, LookAtOurProjects, HomeProjects, HomeTeam, HomeTeamCards, LookAtOurSpaceEvents } from "@/components";
+import {
+  Layout,
+  Banner,
+  LookAtOurProjects,
+  HomeProjects,
+  HomeTeam,
+  HomeTeamCards,
+  LookAtOurSpaceEvents,
+} from "@/components";
 import React from "react";
-import Home from "..";
-
 const WelcomePage = () => {
+  if (typeof window !== "undefined") {
+    localStorage.setItem("@title", "Home");
+  }
+
   return (
     <Layout>
       <Banner />
@@ -12,7 +22,6 @@ const WelcomePage = () => {
       <HomeTeamCards />
       <LookAtOurSpaceEvents />
       <HomeProjects />
-
     </Layout>
   );
 };
