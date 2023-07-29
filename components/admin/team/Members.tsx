@@ -9,7 +9,7 @@ export default function Members() {
   const [members, setMembers] = useState<any[]>([]);
   const onSuccess = (data: any) => {
     console.log({ data });
-  setMembers(data.data.data)
+    setMembers(data.data.data);
   };
 
   const onError = (error: any) => {};
@@ -47,14 +47,14 @@ export default function Members() {
               <th className="px-4 py-3">Role</th>
               <th className="px-4 py-3">Actions</th>
             </tr>
-           
-           {
-            members.map(member => <Member
-              name={member.name}
-              role={member.department}
-              image={member.image}
-            />)
-           }
+            {members.map((member) => (
+              <Member
+                id={member._id}
+                name={member.name}
+                role={member.department}
+                image={member.image}
+              />
+            ))}
           </table>
         </div>
       </div>
