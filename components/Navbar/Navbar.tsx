@@ -71,7 +71,14 @@ export default function Navbar() {
       </div>
 
       <div className="hidden md:contents md:justify-end ">
-        <button className="bg-white text-[#131039] text-[16px] lg:rounded-full font-medium py-2 px-4 rounded-full">
+        <button
+          onClick={() => {
+            router.push(
+              "https://api.whatsapp.com/send/?phone=237675834309&text&type=phone_number&app_absent=0"
+            );
+          }}
+          className="bg-white text-[#131039] text-[16px] lg:rounded-full font-medium py-2 px-4 rounded-full"
+        >
           Let's Talk
         </button>
       </div>

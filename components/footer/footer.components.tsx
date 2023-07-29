@@ -50,14 +50,26 @@ const Footer = () => {
       <div>
         <div className=" float-right flex gap-4 items-center">
           <Icons
+
+          onClick={()=>{
+            router.push('https://www.facebook.com/cliqkets')
+          }}
             icon={IconType.FACEBOOK}
             className="text-white cursor-pointer"
           />
           <Icons
+
+          onClick={()=>{
+            router.push('https://www.instagram.com/cliqkets/')
+          }}
             icon={IconType.INSTAGRAM}
             className="text-white cursor-pointer"
           />
           <Icons
+
+          onClick={()=>{
+            router.push('https://twitter.com/CliqKets')
+          }}
             icon={IconType.TWITTER}
             className="text-white cursor-pointer"
           />
