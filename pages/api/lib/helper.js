@@ -1,12 +1,9 @@
 import mongoose from "mongoose";
 import catchAsync from "./catchAsync";
 import DB from "./db";
-<<<<<<< HEAD
 import Member from '../models/Member';
 import Contributor from '../models/Contributor'
 import Project from "../models/Project";
-=======
->>>>>>> f2f4730252403e63d24603ce4b4183935e025636
 
 
 export const deleteOne = (Model) =>
