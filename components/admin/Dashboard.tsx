@@ -21,7 +21,7 @@ export default function Dashboard() {
               {useGetMembersData(
     onSuccess,
     onError
-  ).data.data.data.length}
+  ).data?.data?.data?.length}
             </p>
           </div>
         </div>
@@ -34,7 +34,7 @@ export default function Dashboard() {
               Number of Projects
             </p>
             <p className="text-lg font-semibold text-white ">
-              {useGetProjectsData(onSuccess, onError).data.data.data.length}
+              {useGetProjectsData(onSuccess, onError).data?.data?.data?.length}
             </p>
           </div>
         </div>

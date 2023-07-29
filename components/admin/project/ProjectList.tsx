@@ -8,7 +8,7 @@ export default function ProjectList() {
   const [projects, setProjects] = useState<any[]>([]);
   const onSuccess = (data: any) => {
     console.log({ data });
-    setProjects(data.data.data);
+    setProjects(data?.data?.data);
   };
 
   const onError = (error: any) => {};
@@ -45,7 +45,7 @@ export default function ProjectList() {
               <th className="px-4 py-3">Description</th>
               <th className="px-4 py-3">Actions</th>
             </tr>
-            {projects.map((project) => (
+            {projects?.map((project) => (
               <ProjectItem
                 title={project.title}
                 description={project.type}
