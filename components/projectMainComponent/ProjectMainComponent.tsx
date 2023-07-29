@@ -94,7 +94,7 @@ export default function ProjectMainComponent() {
                 key={i}
                 id={data._id}
                 title={data.title}
-                image={image}
+                image={data?.coverImage}
                 details={data?.details}
               />
             );
