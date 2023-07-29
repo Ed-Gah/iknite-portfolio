@@ -8,7 +8,7 @@ const Events = () => {
   const onSuccess = (data: any) => {};
 
   const onError = (error: any) => {
-    console.log("Perform sid effect after error fecthing :", error);
+    console.log("Perform sid effect after error fetching :", error);
   };
   const { isLoading, isError, data, error, isFetching, refetch } =
     useGetEventsData(onSuccess, onError) as any;
@@ -34,7 +34,7 @@ const Events = () => {
   }
   return (
     <Layout>
-      <div className="max-w-[1200px] flex flex-col mt-32  text-white">
+      <div className="max-w-[1200px] flex flex-col items-center text-white">
         <EventsBanner />
         <section className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-10">
           {data?.data?.data.map((event: any, i: number) => {
