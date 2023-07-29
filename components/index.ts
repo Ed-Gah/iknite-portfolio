@@ -22,6 +22,9 @@ import EventDescription from "./EventDescription/EventDescription";
 import EventTeamMembers from "./EventTeamMembers/EventTeamMembers";
 import TeamCard from "./TeamCard/TeamCard";
 import WinningTeam from "./WinningTeam/WinningTeam";
+import UserPersonaComponent from "./ProjectDetailsComponent/UserPersonaComponent/UserPersonaComponent";
+
+
 export { 
     Icons, 
     Layout, 
@@ -46,5 +49,6 @@ export {
     LookAtOurProjects,
     ProjectsBanner, 
     ProjectMainComponent, 
+    UserPersonaComponent,
     Footer 
 };
