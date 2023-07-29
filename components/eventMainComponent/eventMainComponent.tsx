@@ -1,5 +1,4 @@
 import { Cards, Layout } from "..";
-import image from "../../assets/images/card.png";
 import { useGetEventsData } from "@/query";
 
 export default function EventMainComponent() {
@@ -77,7 +76,7 @@ export default function EventMainComponent() {
                 <Cards
                 key={i}
                 id={event._id}
-                image={image}
+                image={event?.coverImage}
                 title={event.title}
                 details={event.description}
                 />
