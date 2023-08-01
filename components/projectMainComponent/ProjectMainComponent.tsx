@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Cards, Layout } from "..";
+import { ProjectCards, Layout } from "..";
 import image from "../../assets/images/card.png";
 import { useGetProjectsData } from "@/query";
 import { filteredData } from "@/utils";
@@ -114,7 +114,7 @@ export default function ProjectMainComponent() {
         {type === "ongoing"
           ? ongoing.map((data: any, i: number) => {
               return (
-                <Cards
+                <ProjectCards
                   key={i}
                   id={data._id}
                   title={data.title}
@@ -126,7 +126,7 @@ export default function ProjectMainComponent() {
           : type === "featured"
           ? featured.map((data: any, i: number) => {
               return (
-                <Cards
+                <ProjectCards
                   key={i}
                   id={data._id}
                   title={data.title}
@@ -137,7 +137,7 @@ export default function ProjectMainComponent() {
             })
           : sneak.map((data: any, i: number) => {
               return (
-                <Cards
+                <ProjectCards
                   key={i}
                   id={data._id}
                   title={data.title}

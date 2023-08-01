@@ -22,6 +22,7 @@ import EventDescription from "./EventDescription/EventDescription";
 import EventTeamMembers from "./EventTeamMembers/EventTeamMembers";
 import TeamCard from "./TeamCard/TeamCard";
 import WinningTeam from "./WinningTeam/WinningTeam";
+import ProjectCards from "./cards/ProjectCard";
 import UserPersonaComponent from "./ProjectDetailsComponent/UserPersonaComponent/UserPersonaComponent";
 
 export { 
@@ -37,6 +38,7 @@ export {
     EventDescription,
     EventTeamMembers,
     HomeProjects,
+    ProjectCards,
     HomeEvents,
     HomeTeamCards,
     HomeTeam,

@@ -22,14 +22,15 @@ const WinningTeam = () => {
       <img src="/congr.png" />
       <img src="/winnersPic.png" />
       <div>
-        <div className="text-[20px] md:text-[30px]">Their proposed Solution</div>
-         <div className="w-full grid mt-[10px] grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-10">
-        <img src="/triva1.png" />
-        <img src="/triva2.png" />
-        <img src="/triva3.png" />
+        <div className="text-[20px] md:text-[30px]">
+          Their proposed Solution
+        </div>
+        <div className="w-full grid mt-[10px] grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-10">
+          <img src="/triva1.png" />
+          <img src="/triva2.png" />
+          <img src="/triva3.png" />
+        </div>
       </div>
-      </div>
-     
     </div>
   );
 };
